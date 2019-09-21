@@ -5,4 +5,5 @@
  * 
  */
 
- echo("I am busy, nigga!");
+ /** Load application library */
+ require_once(dirname(__FILE__) . "load.php");
