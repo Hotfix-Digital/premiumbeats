@@ -1,3 +1,3 @@
-# premiumbeats
+Premium Beats
 
-Do not commit files before checking with the rest of the team.
+This is the official web app of Premium Beats, an initiative by Thebigzill Onair.
