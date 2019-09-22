@@ -1,0 +1,6 @@
+<?php
+/**
+ * 
+ * Newsletter Subscription Widget
+ * 
+ */
