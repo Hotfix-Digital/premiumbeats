@@ -5,9 +5,10 @@
  * 
  */
 
+get_header();
+?>
+<div id="main-content" class="content">
 
- get_header();
-
-
-
- get_footer();
+</div><!--- .main-content -->
+<?php
+get_footer();
