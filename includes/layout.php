@@ -5,4 +5,4 @@
  * 
  */
 
- include(CONTENT_DIR . "/layout/index.php");
+ include(SITE_CON . "/layout/index.php");

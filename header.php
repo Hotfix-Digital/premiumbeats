@@ -1,9 +1,9 @@
 <?php
 /**
  * 
- * Start Web Application
+ * Start the application
  * 
  */
 
- /** Load application library */
- require_once(dirname(__FILE__) . "/load.php");
+ /** Load the application library */
+ require_once("load.php");

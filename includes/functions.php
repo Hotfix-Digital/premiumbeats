@@ -1,9 +1,9 @@
  <?php
 
  function get_header() {
-     include(CONTENT_DIR . "/layout/header.php");
+     include(SITE_CON . "/layout/header.php");
  }
 
  function get_footer() {
-    include(CONTENT_DIR . "/layout/footer.php");
+    include(SITE_CON . "/layout/footer.php");
 }
