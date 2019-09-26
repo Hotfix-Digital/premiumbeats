@@ -12,4 +12,4 @@ define("DB_USER", "premiqbo_user");
 define("DB_PASS", "R4FNOZPxdf");
 
 /** Get application settings and files */
-require_once(dirname(__FILE__) . "settings.php");
+require_once(dirname(__FILE__) . "/settings.php");
