@@ -1,6 +1,6 @@
 <?php
-session_start();
-require_once("config.php");
+// session_start();
+// require_once("config.php");
 
 function login_header($title = "Log In", $alert = array()){
 
