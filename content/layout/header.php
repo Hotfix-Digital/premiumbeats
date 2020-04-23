@@ -30,22 +30,22 @@
                         <a href="#" class="nav-link">Premium Beats</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">News</a>
+                        <a href="news" class="nav-link">News</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Gallery</a>
+                        <a href="gallery" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Voice Over</a>
+                        <a href="voice-over" class="nav-link">Voice Over</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Bookings</a>
+                        <a href="bookings" class="nav-link">Bookings</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Profile</a>
+                        <a href="profile" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link login">Login</a>
+                        <a href="login.php" class="nav-link login">Login</a>
                     </li>
                 </ul>
                 <div class="hamburger">

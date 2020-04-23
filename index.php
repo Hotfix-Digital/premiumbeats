@@ -1,6 +1,10 @@
 <?php
-session_start();
+/**
+ * This is the Premium Beats web application
+ * 
+ * @author: Hotfix Digital (Pty) Ltd
+ */
 
-/** Load Application Header */
-require_once("header.php");
+/** Load application configuration */
+require("config.php");
  
