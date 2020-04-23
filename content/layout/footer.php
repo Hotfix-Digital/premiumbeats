@@ -1,6 +1,6 @@
     <footer>
         <div class="container">
-            <img class="footer-logo" src="./images/premiumbeats-logo-black-01.png" alt="logo" width="150px">
+            <img class="footer-logo" src="content/layout/assets/premiumbeats-logo-black-01.png" alt="logo" width="150px">
             <ul class="social-icons">
                 <li class="social-icon">
                     <a href="#">
@@ -44,9 +44,6 @@
             </ul>
 
         </div>
-        <h4>
-            © 2019 copyright all right reserved by thebigzill
-        </h4>
         <h4>Copyright &copy; <?php echo(date("Y")); ?>. All rights reserved.</h4>
     </footer>
 </div>

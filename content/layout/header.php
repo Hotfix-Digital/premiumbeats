@@ -13,8 +13,9 @@
 <title>Navbar 1</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="content/layout/src/style.css">
+<script src="content/layout/src/main.js"></script>
 <script src="https://kit.fontawesome.com/bbdbc1be2c.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div id="">
@@ -22,7 +23,7 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="navbar-brand">
-                    <img src="./images/premiumbeats-logo-color-01.png" alt="" width="150px">
+                    <img src="content/layout/assets/premiumbeats-logo-color-01.png" alt="" width="150px">
                 </a>
                 <ul class="nav-list">
                     <li class="nav-item">

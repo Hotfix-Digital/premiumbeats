@@ -1,0 +1,237 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    min-height: 100%;
+}
+
+main {
+    overflow: auto;
+    padding: 2rem 0rem 5rem 0rem;
+}
+nav {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: block;
+    margin: 0 2rem;
+    color: rgb(122, 122, 122);
+}
+
+.nav-item {
+    position: relative;
+    line-height: 6rem;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(122, 122, 122);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 650ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;;
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: relative;
+    height: 18.75rem;
+    margin-top: auto;
+    clear: both;
+}
+
+.social-icons {
+    display: flex;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+li.social-icon {
+    font-size: .5rem;
+
+}
+
+a:visited {
+    color: inherit;
+}
+
+.social-icon:hover {
+    font-size: .6rem;
+    transition: .3s cubic-bezier(.07,.04,.09,1.68);
+}
+
+footer h4 {
+    font-size: 1rem;
+    /* display: block; */
+    position: absolute;
+    bottom: 0px;
+    /* left: 50%; */
+    width: 100%;
+    text-align: center;
+    /* margin-left: -50%; */
+    padding-bottom: 1rem;
+}
+
+
+/* MENU */
+
+.hamburger {
+    width: 3.6rem;
+    height: 1.8rem;
+    position: relative;
+    line-height: 5rem;
+    cursor: pointer;
+    z-index: 1500;
+    display: none;
+}
+
+.hamburger  .line {
+    width: 100%;
+    height: 2px;
+    background-color:  #25122F;
+    position: absolute;
+    display: block;
+    right: 0;
+    transition: all 650ms;
+}
+
+.hamburger .line:nth-child(1) {
+    top: 0;
+}
+
+.hamburger .line:nth-child(2) {
+    top: 50%;
+    margin-top: -1px;
+    width: 2.8rem;
+}
+
+.hamburger .line:nth-child(3) {
+    top: 100%;
+    margin-top: -2px;
+    width: 2rem;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(.8rem) rotate(45deg);
+    width: 2rem;
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-.8rem) rotate(-45deg);
+    width: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .nav-link {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    footer {
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display:flex ;
+    }
+    .hamburger.active .line {
+        background-color: #fff;  
+    }
+    .nav-list {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #F16041, #EE1E6F);
+        position: fixed;
+        left: 0;
+        top: -100vh;
+        transition: top 650ms;
+        z-index: 1000;
+    }
+    .nav-link {
+        color: #fff;
+        font-size: 3rem;
+    }
+    .nav-list.active {
+        top: 0;
+    }
+    .nav-item::before {
+        background-color: #fff;
+    }
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+    }
+    footer {
+        padding-top: .6rem;
+        height: 6rem;
+    }
+    .footer-logo{
+        display: none;
+    }
+}
