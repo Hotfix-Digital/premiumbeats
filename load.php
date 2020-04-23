@@ -5,9 +5,6 @@
  * 
  */
 
-/** Define the main path of the application */
-define("MAIN_PATH", dirname(__FILE__) . "/");
-
 /** Start application */
 require("includes/dbcon.php");
 require("includes/router.php");
