@@ -10,7 +10,7 @@
 <title><?php echo(SITE_NAME); ?></title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Navbar 1</title>
+<!-- <title>Navbar 1</title> Not needed -->
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="content/layout/src/style.css">
