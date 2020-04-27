@@ -73,7 +73,74 @@ get_header();
                 <a href="https://soundcloud.com/premiumbeatssa/premium-beats-014-feat-dj-kts-tbm" title="Premium Beats 014 Feat. DJ KTS TBM" target="_blank" style="color: #cccccc; text-decoration: none;">Premium Beats 014 Feat. DJ KTS TBM
                 </a>
             </div>
-        </div> <!--.soundcloud-->
+        </div><!--.soundcloud-->
+        <div class="subcribe">
+            <h1 class="subscribe__header">SUBCRIBE</h1>
+            <p class="subscribe__text">Signup with your email address to recieve the latest updates on Premium Beats</p>
+            <form action="#" class="subscribe__form">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Full Name" name="name" required>
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Email address" name="email" required>
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div><!--.subscribe-->
+        <div class="news__higlights">
+            <div class="news__highlight">
+                <div class="highlight__header">
+                    <div class="date">
+                        <span class="day">26</span>
+                        <span class="month">May</span>
+                        <span class="year">2020</span>
+                    </div> <!--.date-->
+                    <!--Add icons for article-->
+                </div><!--.highlight__header-->
+                <div class="highlight__body">
+                    <div class="highlight__content">
+                        <span class="highlight__author">Prince Radebe</span>
+                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
+                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div><!--.highlight__content-->
+                </div><!--.highlight__body-->
+            </div><!--.news__highlight-->
+            <div class="news__highlight">
+                <div class="highlight__header">
+                    <div class="date">
+                        <span class="day">26</span>
+                        <span class="month">May</span>
+                        <span class="year">2020</span>
+                    </div> <!--.date-->
+                    <!--Add icons for article-->
+                </div><!--.highlight__header-->
+                <div class="highlight__body">
+                    <div class="highlight__content">
+                        <span class="highlight__author">Prince Radebe</span>
+                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
+                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div><!--.highlight__content-->
+                </div><!--.highlight__body-->
+            </div><!--.news__highlight-->
+            <div class="news__highlight">
+                <div class="highlight__header">
+                    <div class="date">
+                        <span class="day">26</span>
+                        <span class="month">May</span>
+                        <span class="year">2020</span>
+                    </div> <!--.date-->
+                    <!--Add icons for article-->
+                </div><!--.highlight__header-->
+                <div class="highlight__body">
+                    <div class="highlight__content">
+                        <span class="highlight__author">Prince Radebe</span>
+                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
+                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
+                        <a href="#" class="button">Read More</a>
+                    </div><!--.highlight__content-->
+                </div><!--.highlight__body-->
+            </div><!--.news__highlight-->
+        </div><!--.news__highlights-->
     </div><!-- end of .container -->
 </div>
 <!--- .content -->
