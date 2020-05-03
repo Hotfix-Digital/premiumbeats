@@ -226,7 +226,7 @@ nav {
   text-align: center;
 }
 
-.subscribe__header {
+.subscribe__header, .news__header {
   font-size: 3rem;
 }
 
@@ -315,7 +315,6 @@ footer h4 {
 
 /* NEWS CARD */
 .card {
-  /* float: left; */
   display: flex;
   justify-content: space-between;
   margin: 8rem 0;
@@ -355,7 +354,12 @@ footer h4 {
   min-height: 50rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  box-shadow:  8px 8px 11px #f2f2f2, 
+              -8px -8px 11px #ffffff;
+  transition: all .2s ease-in-out;
+}
+.card .news__highlight:hover {
+  transform: scale(1.01);
 }
 .card .news__highlight:hover .highlight__body {
   transform: translateY(0);
@@ -389,7 +393,7 @@ footer h4 {
   transform: translateY(-60px);
 }
 .news__higlights .news__highlight {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+  background: url("../assets/thebigzill.jpg") center / cover no-repeat;
 }
 .news__higlights .news__highlight:hover .highlight__icons span {
   transform: translate(-50%, -10px);
@@ -454,7 +458,7 @@ footer h4 {
   opacity: 1;
 }
 
-/* END NEWS CARD */
+/* ===================END NEWS CARD========================== */
 
 
 /* MENU */
@@ -536,6 +540,25 @@ footer h4 {
     height: 12px;
   }
   /* END SLIDER */
+  .subscribe__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__input, .form__button {
+    height: 4rem;
+    width: 30rem;
+    margin: 1rem 0 ;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .news__header {
+    margin-bottom: 1rem;
+  }
+  .card .news__highlight {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 685px) and (max-width: 959px) {
