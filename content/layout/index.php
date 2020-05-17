@@ -70,6 +70,7 @@ get_header();
         </div>
         <!--.subscribe-->
         <div class="news__higlights card">
+            <h1 class="news__header">NEWS HIGHLIGHTS</h1>
             <div class="news__highlight">
                 <div class="highlight__header">
                     <div class="date">
