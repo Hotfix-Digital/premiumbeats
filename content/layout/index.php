@@ -49,24 +49,20 @@ get_header();
         </div>
     </div> <!-- end of .slide__show -->
     <div class="container">
-        <div class="soundcloud">
-            <iframe scrolling="no" id="hearthis_at_track_4433241" width="100%" height="150" src="https://app.hearthis.at/embed/4433241/transparent_black/?hcolor=&color=&style=2&block_size=1&block_space=0&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
-                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb016-feat.-anerah-yasole-2nd-edit/" target="_blank">PB016 FEAT. ANERAH YASOLE - 2nd Edit</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+        <div class="player">
+            <iframe scrolling="no" id="hearthis_at_track_4713723" width="100%" height="150" src="https://app.hearthis.at/embed/4713723/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb017-feat-theocratous/" target="_blank">PB017 Feat. Theocratous</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
-            <!-- <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair
-                </a> ·
-                <a href="https://soundcloud.com/premiumbeatssa/premium-beats-014-feat-dj-kts-tbm" title="Premium Beats 014 Feat. DJ KTS TBM" target="_blank" style="color: #cccccc; text-decoration: none;">Premium Beats 014 Feat. DJ KTS TBM
-                </a>
-            </div> -->
         </div>
-        <!--.soundcloud-->
+        <!--.player-->
         <div class="subscribe">
             <h1 class="subscribe__header">SUBSCRIBE</h1>
             <p class="subscribe__text">Signup with your email address to recieve the latest updates on Premium Beats</p>
             <form action="#" class="subscribe__form">
                 <label for="name">Full Name</label>
                 <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="name" required>
+                <label for="name">Contact Number</label>
+                <input class="form__input form__input--fullname" type="text" placeholder="Contact Number" name="name">
                 <label for="email">Email Address</label>
                 <input class="form__input form__input--email" type="email" placeholder="Email address" name="email" required>
                 <button class="form__button" type="submit">SIGN UP</button>

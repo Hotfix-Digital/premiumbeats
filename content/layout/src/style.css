@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 :root {
   --white: #fff;
   --light-grey: #fafafa;
@@ -94,7 +96,7 @@ nav {
     transform-origin: left;;
 }
 
-/* SLIDER START */
+/*============================= SLIDER START =============================*/
 .slide__show {
   margin: 0 auto;
   position: relative;
@@ -105,19 +107,19 @@ nav {
   background-color: #1c1c1c;
 }
 #one {
-  background-image: url("/content/layout/assets/slider/slide1.jpg");
+  background-image: url("../assets/slider/slide1.jpg");
   background-size: cover;
 }
 #two {
-  background-image: url("/content/layout/assets/slider/slide2.jpg");
+  background-image: url("../assets/slider/slide2.jpg");
   background-size: cover;
 }
 #three {
-  background-image: url("/content/layout/assets/slider/slide3.jpg");
+  background-image: url("../assets/slider/slide3.jpg");
   background-size: cover;
 }
 #four {
-  background-image: url("/content/layout/assets/slider/slide4.jpg");
+  background-image: url("../assets/slider/slide4.jpg");
   background-size: cover;
 }
 .slide__show input {
@@ -218,18 +220,17 @@ nav {
 }
 /*============================= SLIDER END =============================*/
 
-.soundcloud {
+.player {
   margin-top: 2rem;
 }
+
 .subscribe {
   margin: 2rem 0;
   text-align: center;
 }
-
-.subscribe__header {
+.subscribe__header, .news__header {
   font-size: 3rem;
 }
-
 .subscribe__text {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -255,11 +256,9 @@ nav {
   width: 30rem;
   margin-right: 2rem;
 }
-
 .form__input--email {
   width: 50rem;
 }
-
 .form__button {
   height: 4rem;
   width: 10rem;
@@ -268,6 +267,7 @@ nav {
   background-color: black;
   cursor: pointer;
 }
+
 footer {
     background-color: #F2F2F2;
     position: relative;
@@ -286,16 +286,13 @@ footer {
     justify-content: space-between;
     /* background-color: red; */
 }
-
 li.social-icon {
     font-size: .5rem;
 
 }
-
 a:visited {
     color: inherit;
 }
-
 .social-icon:hover {
     font-size: .6rem;
     transition: .3s cubic-bezier(.07,.04,.09,1.68);
@@ -313,9 +310,8 @@ footer h4 {
     padding-bottom: 1rem;
 }
 
-/* NEWS CARD */
+/*============================= NEWS CARD =============================*/
 .card {
-  /* float: left; */
   display: flex;
   justify-content: space-between;
   margin: 8rem 0;
@@ -355,7 +351,12 @@ footer h4 {
   min-height: 50rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  box-shadow:  8px 8px 11px #f2f2f2, 
+              -8px -8px 11px #ffffff;
+  transition: all .2s ease-in-out;
+}
+.card .news__highlight:hover {
+  transform: scale(1.01);
 }
 .card .news__highlight:hover .highlight__body {
   transform: translateY(0);
@@ -389,7 +390,7 @@ footer h4 {
   transform: translateY(-60px);
 }
 .news__higlights .news__highlight {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+  background: url("../assets/thebigzill.jpg") center / cover no-repeat;
 }
 .news__higlights .news__highlight:hover .highlight__icons span {
   transform: translate(-50%, -10px);
@@ -454,10 +455,10 @@ footer h4 {
   opacity: 1;
 }
 
-/* END NEWS CARD */
+/* =================== END NEWS CARD========================== */
 
 
-/* MENU */
+/*============================= BURGER MENU =============================*/
 
 .hamburger {
     width: 3.6rem;
@@ -510,7 +511,7 @@ footer h4 {
 }
 
 @media screen and (max-width: 685px) {
-  /* SLIDER */
+/*============================= SLIDER =============================*/
   .slide__show {
     border: none;
     width: 100%;
@@ -535,7 +536,26 @@ footer h4 {
     width: 12px;
     height: 12px;
   }
-  /* END SLIDER */
+/*============================= END SLIDER =============================*/
+  .subscribe__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__input, .form__button {
+    height: 4rem;
+    width: 30rem;
+    margin: 1rem 0 ;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .news__header {
+    margin-bottom: 1rem;
+  }
+  .card .news__highlight {
+    margin-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 685px) and (max-width: 959px) {
