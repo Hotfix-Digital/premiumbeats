@@ -1,5 +1,5 @@
 <?php
-class router {
+class routing {
     public $url;
     public $path;
 
@@ -19,6 +19,28 @@ class router {
             $path['parameters'] = explode('/', $path['call']);
         }
         return $path;
+    }
+
+    public function page_index() {
+        global $dbcon;
+
+        $pages = $dbcon->get_results("SELECT pb_post.ID, pb_post.title FROM posts WHERE pb_post.type = 'page' AND posts.deleted = 0");
+
+        if(!$pages) {
+            return array(array(), array());
+        }
+    }
+
+    function get_page_uri($page = 0) {
+        if(!$page instanceof post) {
+            $page = new post($page);
+        }
+
+        if(!$page) {
+            return false;
+        }
+
+
     }
 
     public function get_host() {

@@ -170,4 +170,24 @@ class dbcon {
 
         return $response;
     }
+
+    public function get_results($query) {
+        if($query) {
+            $this->query($query);
+        } else {
+            return null;
+        }
+
+        return $this->last_result;
+    }
+
+    public function get_row($query) {
+        if($query) {
+            $this->query($query);
+        } else {
+            return null;
+        }
+        
+        return $this->last_result;
+    }
 }

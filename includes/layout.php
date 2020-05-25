@@ -5,6 +5,8 @@
  * 
  */
 
+ $routing = new routing;
+ 
 function get_header() {
     include("content/layout/header.php");
 }
@@ -29,11 +31,25 @@ function get_layout_search() {
     include("content/layout/search.php");
 }
 
+function get_layout_profile() {
+    include("content/layout/profile.php");
+}
+
+function is_search() {
+    
+}
+
 function is_home() {
     return true;
 }
 
+function is_profile() {
+
+}
+
 if(is_home()) {
     get_layout_home();
+} elseif(is_profile()) {
+    get_layout_profile();
 }
 
