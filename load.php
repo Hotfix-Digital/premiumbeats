@@ -10,6 +10,9 @@ require("includes/composition.php");
 require("includes/functions.php");
 require("includes/routing.php");
 require("includes/layout.php");
+require("includes/query.php");
+
+$wp_query = new query();
 
 function start_db() {
     global $dbcon;
@@ -52,5 +55,6 @@ function get_extensions() {
 }
 
 global $dbcon;
+
 start_db();
 

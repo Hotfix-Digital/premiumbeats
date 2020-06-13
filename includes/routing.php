@@ -21,31 +21,43 @@ class routing {
         return $path;
     }
 
-    public function page_index() {
-        global $dbcon;
-
-        $pages = $dbcon->get_results("SELECT pb_post.ID, pb_post.title FROM posts WHERE pb_post.type = 'page' AND posts.deleted = 0");
-
-        if(!$pages) {
-            return array(array(), array());
-        }
+    public function init() {
+        $host_url = str_replace('www.', '', parse_url($url, PHP_URL_HOST));
+        $home_url = str_replace('www.', '', parse_url(SITE_HOME, PHP_URL_HOST));
     }
 
-    function get_page_uri($page = 0) {
-        if(!$page instanceof post) {
-            $page = new post($page);
-        }
-
-        if(!$page) {
-            return false;
-        }
-
+    public function is_404() {
 
     }
 
-    public function get_host() {
-        $url = $this->url;
+    public function is_search() {
+        global $url;
 
-        return parse_url($url, PHP_URL_HOST);
+        if(preg_match("/(s)=(\d+)/", $url, $data)) {
+            if($data) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function is_home() {
+        global $url;
+
+        
+    }
+
+    public function is_page() {
+        global $url;
+
+        $path = parse_url($url, PHP_URL_PATH);
+        $path = explode("/", $path);
+
+        if(count($path) > 2) {
+            return true;
+        }
+
+        return false;
     }
 }

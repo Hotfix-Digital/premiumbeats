@@ -5,51 +5,49 @@
  * 
  */
 
- $routing = new routing;
+$routing = new routing;
  
 function get_header() {
-    include("content/layout/header.php");
+    require("content/layout/header.php");
 }
 
 function get_footer() {
-    include("content/layout/footer.php");
-}
-
-function get_layout_404() {
-    include("content/layout/404.php");
-}
-
-function get_layout_home() {
-    include("content/layout/index.php");
-}
-
-function get_layout_post() {
-    include("content/layout/post.php");
-}
-
-function get_layout_search() {
-    include("content/layout/search.php");
-}
-
-function get_layout_profile() {
-    include("content/layout/profile.php");
+    require("content/layout/footer.php");
 }
 
 function is_search() {
-    
+    global $routing;
+
+    return $routing->is_search();
+}
+
+function is_404() {
+    global $routing;
+
+    return $routing->is_404();
+}
+
+function is_page() {
+    global $routing;
+
+    if(!isset($routing)) {
+        return false;
+    }
+
+    return $routing->is_page();
 }
 
 function is_home() {
-    return true;
+    global $routing;
+
+    if(!isset($routing)) {
+        return false;
+    }
+
+    return $routing->is_home();
 }
 
-function is_profile() {
-
-}
-
-if(is_home()) {
-    get_layout_home();
-} elseif(is_profile()) {
-    get_layout_profile();
+function load_layout() {
+    require_once("content/layout/index.php");
 }
 
