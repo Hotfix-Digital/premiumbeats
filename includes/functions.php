@@ -1,4 +1,8 @@
- <?php
+<?php
+
+function init() {
+    // Do something
+}
 
 function show_title() {
     echo("<title>" . get_title() . "</title>");
