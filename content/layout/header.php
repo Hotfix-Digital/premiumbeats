@@ -30,11 +30,11 @@
                 </a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Premium Beats</a>
+                        <a href="#" class="nav-link">Mixes</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="news" class="nav-link">News</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="gallery" class="nav-link">Gallery</a>
                     </li>
@@ -47,9 +47,9 @@
                     <li class="nav-item">
                         <a href="profile" class="nav-link">Profile</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="login.php" class="nav-link login">Login</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="hamburger">
                     <span class="line"></span>
