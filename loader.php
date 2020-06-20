@@ -8,7 +8,8 @@
 $routes = array(
   '/' => 'content/layout/index.php',
   '/profile' => 'content/layout/profile.php',
-  '/search' => 'content/layout/search.php'
+  '/search' => 'content/layout/search.php',
+  '/gallery' => 'content/layout/gallery.php'
 );
 
 if(defined("SITE_HOME")) {
