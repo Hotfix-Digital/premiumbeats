@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;700;900&display=swap');
-@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 :root {
   --white: #fff;
   --light-grey: #fafafa;
-  --primary: #ed1c6f;
-  --secondary: #f2633c;
 }
 
 
@@ -21,7 +19,6 @@
 html {
     height: 100%;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
     font-size: 10px;
 }
 
@@ -32,16 +29,11 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
-p {
-    font-family: 'Noto Sans JP', sans-serif;
-}
 a {
   text-decoration: none;
 }
 
 header {
-    position: fixed;
-    z-index: 1000;
     width: 100%;
     background-color: var(--light-grey);
 }
@@ -54,9 +46,7 @@ header {
     padding: 0 2rem;
     min-height: 100%;
 }
-.content {
-    margin-top: 8rem;
-}
+
 main {
     overflow: auto;
     padding: 2rem 0rem 5rem 0rem;
@@ -111,7 +101,7 @@ nav {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 95vh;
   padding-bottom: 40%;
   user-select: none;
   background-color: #1c1c1c;
@@ -282,7 +272,7 @@ footer {
     background-color: #F2F2F2;
     position: relative;
     height: 18.75rem;
-    margin-top: 4rem;
+    margin-top: auto;
     clear: both;
 }
 
@@ -547,8 +537,6 @@ footer h4 {
     height: 12px;
   }
 /*============================= END SLIDER =============================*/
-
-/*============================= SUBCRIBE FORM =============================*/
   .subscribe__form {
     flex-direction: column;
     align-items: center;
@@ -569,228 +557,13 @@ footer h4 {
     margin-bottom: 2rem;
   }
 }
-/*============================= END SUBCRIBE FORM =============================*/
 
-/*============================= PROFILE =============================*/
-.profile__card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.profile__picture--right {
-    margin-right: 2rem;
-}
-.profile__card--left {
-    flex-direction: row-reverse;
-}
-.profile__picture {
-    width: 70rem;
-}
-.profile__header {
-    background: -webkit-linear-gradient(var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 6rem;
-    margin-bottom: 1.2rem;
-}
-.profile__text {
-    color: #8c8c8c;
-    font-size: 2rem;
-    line-height: 2.5rem;
-}
-.profile--overlay {
-    margin-top: -20rem;
-}
-.profile__file {
-    display: flex;
-    justify-content: center;
-    margin: 10rem 0rem;
-}
-.profile__download {
-    font-size: 1.5rem;
-    border: none;
-    background-color: black;
-    color: white;
-    height: 5rem;
-    width: 50rem;
-}
-/*============================= END PROFILE =============================*/
-
-/*============================= 404 =============================*/
-.Page404 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Page404__image img {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    width: 100rem;
-}
-.Page404__text {
-    font-size: 5rem;
-    margin-bottom: 10rem;
-    color: #8c8c8c;
-}
-
-/*============================= END 404 =============================*/
-
-/*============================= MANSORY =============================*/
-.page__header {
-    background: -webkit-linear-gradient(var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 6rem;
-    margin: 4rem 0;
-}
-.masonry {
-    columns: 4;
-    column-gap: 16px;
-  }
-  @media (max-width: 1200px) {
-    .masonry {
-      columns: 3;
-    }
-  }
-  @media (max-width: 992px) {
-    .masonry {
-      columns: 2;
-    }
-  }
-  .masonry .grid {
-    display: inline-block;
-    margin-bottom: 16px;
-    position: relative;
-  }
-  .masonry .grid:before {
-    border-radius: 5px;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  .masonry .grid img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  .voice__masonry .grid iframe {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom:2rem;
-  }
-  
-/*============================= END MANSORY =============================*/
-
-
-.splash__container {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: 50vh; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    user-select: none;
-}
-.mix__player iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-.mix__17 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
-}
-/* .mix__17:hover {
-  scale: ;
-} */
-.mix__16 {
-  background-image: url("/assets/mix-images/mix__PB016.png");
-}
-.mix__15 {
-  background-image: url("/assets/mix-images/mix__PB015.png");
-}
-.mix__14 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
-}
-.mix__13 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
-}
-
-/*============================= BOOKING FORM =============================*/
-form {
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0 0 20px 0 #c0c0c0; 
-}
-.form__button--booking, .form__input--booking {
-  margin: 1rem 0;
-  width: 100%;
-}
-
-
-.checkbox {
-  margin: 1rem 0;;
-}
-/* Base for label styling */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
-}
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 2rem;
-  cursor: pointer;
-}
-
-/* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0;
-  width: 1.5rem; height: 1.5rem;
-  border: 2px solid #ccc;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
-}
-/* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-  content: '\2713\0020';
-  position: absolute;
-  top: .15em; left: .22em;
-  font-size: 1.3em;
-  line-height: 0.8;
-  color: #000000;
-  transition: all .2s;
-}
-/* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0);
-}
-
-/*============================= END BOOKING FORM =============================*/
 @media only screen and (min-width: 685px) and (max-width: 959px) {
     .nav-link {
         font-size: 1.4rem;
         display: flex;
         justify-content: space-between;
         width: 100%;
-    }
-    .Page404__image img {
-      width: 50rem;
     }
     footer {
         height: 14rem;
@@ -826,56 +599,6 @@ form {
     }
     .nav-item::before {
         background-color: #fff;
-    }
-/*============================= MOBILE PROFILE =============================*/
-    .profile__card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-   .profile__picture--right {
-      margin-right: 0;
-  }
-  .profile__picture {
-      width: 40rem;
-  }
-  .profile__header {
-      background: -webkit-linear-gradient(var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900;
-      font-size: 4rem;
-      margin-bottom: 0rem;
-      padding: 1rem;
-  }
-  .profile__text {
-      color: #8c8c8c;
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-      padding: 1rem;
-  }
-  .mix__link {
-    padding: 0rem 1rem 0rem inherit;
-  }
-  .profile--overlay {
-      margin-top: 0rem;
-  }
-  .profile__file {
-      display: flex;
-      justify-content: center;
-      margin: 5rem 0rem;
-  }
-  .profile__download {
-      font-size: 1.5rem;
-      border: none;
-      background-color: black;
-      color: white;
-      height: 5rem;
-      width: 20rem;
-  }
-/*============================= END MOBILE PROFILE =============================*/
-    .Page404__image img {
-      width: 40rem;
     }
     .social-icons {
         width: 100%;
