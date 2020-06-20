@@ -9,13 +9,6 @@
 get_header();
 ?>
 <div id="content" class="content">
-<?php
-if(is_search()){
-
-} elseif(!is_home()) {
-
-} else {
-?>
     <div class="slide__show">
         <input type="radio" id="i1" name="images" checked />
         <input type="radio" id="i2" name="images" />
@@ -167,6 +160,4 @@ if(is_search()){
     </div><!-- end of .container -->
 </div>
 <!--- .content -->
-<?php
-}
 get_footer();
