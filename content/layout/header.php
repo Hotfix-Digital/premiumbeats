@@ -25,7 +25,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="navbar-brand">
+                <a href="index" class="navbar-brand">
                     <img src="content/layout/assets/premiumbeats-logo-color-01.png" alt="" width="150px">
                 </a>
                 <ul class="nav-list">

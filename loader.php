@@ -7,9 +7,11 @@
 
 $routes = array(
   '/' => 'content/layout/index.php',
+  '/index' => 'content/layout/index.php',
   '/profile' => 'content/layout/profile.php',
   '/search' => 'content/layout/search.php',
-  '/gallery' => 'content/layout/gallery.php'
+  '/gallery' => 'content/layout/gallery.php',
+  '/profile' => 'content/layout/profile.php'
 );
 
 if(defined("SITE_HOME")) {
