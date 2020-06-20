@@ -54,7 +54,7 @@
                         <a href="gallery" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="voice-over" class="nav-link">Voice Over</a>
+                        <a href="voice-overs" class="nav-link">Voice Overs</a>
                     </li>
                     <li class="nav-item">
                         <a href="bookings" class="nav-link">Bookings</a>

@@ -12,7 +12,8 @@ $routes = array(
   '/search' => 'content/layout/search.php',
   '/gallery' => 'content/layout/gallery.php',
   '/profile' => 'content/layout/profile.php',
-  '/mixes' => 'content/layout/mixes.php'
+  '/mixes' => 'content/layout/mixes.php',
+  '/voice-overs' => 'content/layout/voice-overs.php'
 );
 
 if(defined("SITE_HOME")) {
