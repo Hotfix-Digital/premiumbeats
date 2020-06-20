@@ -117,7 +117,7 @@ nav {
   background-color: #1c1c1c;
 }
 #one {
-  background-image: url("../assets/slider/slide1.jpg");
+  background-image: url("../../layout/assets/slider/slide1.jpg");
   background-size: cover;
 }
 #two {
@@ -704,22 +704,22 @@ footer h4 {
   transform: translate(-50%, -50%)
 }
 .mix__17 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
 }
 /* .mix__17:hover {
   scale: ;
 } */
 .mix__16 {
-  background-image: url("/assets/mix-images/mix__PB016.png");
+  background-image: url("../assets/mix-images/mix__PB016.png");
 }
 .mix__15 {
-  background-image: url("/assets/mix-images/mix__PB015.png");
+  background-image: url("../assets/mix-images/mix__PB015.png");
 }
 .mix__14 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
 }
 .mix__13 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
 }
 
 /*============================= BOOKING FORM =============================*/
