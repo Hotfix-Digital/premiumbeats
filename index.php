@@ -6,5 +6,7 @@
  */
 
 /** Load application configuration */
-require("config.php");
- 
+require_once("config.php");
+
+/** Load application layout */
+require_once("loader.php");
