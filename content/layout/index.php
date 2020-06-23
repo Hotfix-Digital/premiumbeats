@@ -65,7 +65,7 @@ get_header();
                 <input class="form__input form__input--fullname" type="text" placeholder="Contact Number" name="name">
                 <label for="email">Email Address</label>
                 <input class="form__input form__input--email" type="email" placeholder="Email address" name="email" required>
-                <button class="form__button" type="submit">SIGN UP</button>
+                <button class="form__button" type="submit">Sign up</button>
             </form>
         </div>
         <!--.subscribe-->
