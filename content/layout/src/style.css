@@ -240,6 +240,7 @@ nav {
 }
 .subscribe__header, .news__header {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .subscribe__text {
   font-size: 1.5rem;
@@ -285,7 +286,7 @@ nav {
 }
 .form__button {
   font-size: 1.6rem;
-  height: 4rem;
+  height: 5rem;
   width: 10rem;
   color: var(--white);
   border: none;
@@ -322,7 +323,9 @@ a:visited {
     font-size: .6rem;
     transition: .3s cubic-bezier(.07,.04,.09,1.68);
 }
-
+.fa-stack {
+  color: black;
+}
 footer h4 {
     font-size: 1rem;
     /* display: block; */
@@ -622,7 +625,7 @@ footer h4 {
     justify-content: center;
     margin: 10rem 0rem;
 }
-.profile__download {
+.profile__download, .tracklisting {
     font-size: 1.5rem;
     border: none;
     background-color: black;
@@ -630,6 +633,8 @@ footer h4 {
     height: 5rem;
     width: 50rem;
 }
+
+
 /*============================= END PROFILE =============================*/
 
 /*============================= 404 =============================*/
@@ -720,6 +725,13 @@ footer h4 {
 }
 .mix__17 {
   background-image: url("../assets/mix-images/mix__PB017.png");
+}
+.tracklisting {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 /* .mix__17:hover {
   scale: ;

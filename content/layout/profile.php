@@ -53,7 +53,7 @@ get_header();
         <div class="profile__file">
             <a href="./assets/Thebigzill Onair Brand Profile_Media Kit - March 2020.pdf" download>
                 <button class="profile__download">
-                    DONWLOAD PROFILE
+                    DOWNLOAD PROFILE
                 </button>
             </a>
         </div><!-- end of .profile__file -->
