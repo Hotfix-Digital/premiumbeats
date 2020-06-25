@@ -20,7 +20,7 @@ get_header();
                         <p>Time of Event</p>
                         <input class="form__input form__input--booking" type="time" name="name" />
                     </div>
-                    <div class="field">
+                    <!-- <div class="field">
                         <p>Artist to book</p>
                         <select class="form__input form__input--booking">
                             <option value=""></option>
@@ -30,10 +30,10 @@ get_header();
                             <option value="4">Artist 3</option>
                             <option value="5">Artist 4</option>
                         </select>
-                    </div>
+                    </div> -->
                     <div class="field">
                         <p>Description of Event</p>
-                        <textarea class="form__input form__input--booking" rows="3"></textarea>
+                        <textarea class="form__input form__input--booking" rows="10"></textarea>
                     </div>
                     <div class="field">
                         <p>Promoter's Name</p>
@@ -53,21 +53,21 @@ get_header();
                             <input class="form__input form__input--booking"  type="text" name="name" placeholder="Postal / Zip code" />
                             <select class="form__input form__input--booking">
                                 <option value="">Country</option>
-                                <option value="1">Russia</option>
-                                <option value="2">Germany</option>
-                                <option value="3">France</option>
-                                <option value="4">Armenia</option>
-                                <option value="5">USA</option>
+                                <option value="1">South Africa</option>
+                                <option value="2">Swaziland</option>
+                                <option value="3">Lesotho</option>
+                                <option value="4">Botswana</option>
+                                <option value="5">Mozambique</option>
                             </select>
                         </div>
                     </div>
                     <div class="field">
                         <p>Venue Capacity</p>
-                        <input class="form__input form__input--booking" type="text" name="name" />
+                        <input class="form__input form__input--booking" type="number" name="capacity" />
                     </div>
                     <div class="field">
                         <p>Expected Attendance</p>
-                        <input class="form__input form__input--booking" type="text" name="name" />
+                        <input class="form__input form__input--booking" type="number" name="attendance" />
                     </div>
                     <div class="field">
                         <div class="question">
@@ -88,22 +88,21 @@ get_header();
                             </div> 
                             <div class="field">
                             <p>Set Time (in minutes)</p>
-                            <input class="form__input form__input--booking" type="text" name="name" />
+                            <input class="form__input form__input--booking" type="number" name="set" />
                         </div>
                         <div class="field">
                             <p>Contact Person</p>
                             <div class="name-field">
-                                <input class="form__input form__input--booking" type="text" name="name" placeholder="First" />
-                                <input class="form__input form__input--booking" type="text" name="name" placeholder="Last" />
+                                <input class="form__input form__input--booking" type="text" name="name" placeholder="Full Name" />
                             </div>
                         </div>
                         <div class="field">
                             <p>Contact Email</p>
-                            <input class="form__input form__input--booking" type="text" name="name" />
+                            <input class="form__input form__input--booking" type="email" name="name" />
                         </div>
                         <div class="field">
                             <p>Contact Number</p>
-                            <input class="form__input form__input--booking" type="text" name="name" />
+                            <input class="form__input form__input--booking" type="tel" name="name" />
                         </div>
                         <div class="question">
                             <div class="question-answer checkbox-field">
@@ -114,7 +113,7 @@ get_header();
                             </div>
                         </div>
                         <div class="btn-block">
-                            <button class="form__button form__button--booking" type="submit" href="/">SEND</button>
+                            <button class="form__button form__button--booking" type="submit" href="/">Send</button>
                         </div>
                 </form>
             </div>
