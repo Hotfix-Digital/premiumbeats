@@ -637,6 +637,52 @@ footer h4 {
 
 /*============================= END PROFILE =============================*/
 
+/*============================= TRACKLIST =============================*/
+
+.tracklisting::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.tracklisting.active::after {
+  content: "\2212";
+}
+ol {
+  list-style-position:inside;
+}
+.mix__hour, .mix__title {
+  margin-bottom: 2rem;
+}
+.tracklist__body {
+  /* padding: 1rem; */
+  text-align: left;
+  z-index: 10000;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  max-height: 0;
+  width: 50rem;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  transition: max-height 0.2s ease-out;
+}
+.tracklist__content {
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: auto;
+  line-height: 2rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/*============================= END TRACKLIST =============================*/
+
 /*============================= 404 =============================*/
 .Page404 {
     display: flex;
@@ -728,7 +774,7 @@ footer h4 {
 }
 .tracklisting {
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
