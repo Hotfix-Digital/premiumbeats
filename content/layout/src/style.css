@@ -659,7 +659,7 @@ ol {
   text-align: left;
   z-index: 10000;
   position: absolute;
-  top: 150%;
+  top: 118%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -670,6 +670,7 @@ ol {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   transition: max-height 0.2s ease-out;
+  border-radius: 0 0 2px 2px;
 }
 .tracklist__content {
   color: white;
@@ -861,6 +862,8 @@ form p {
 
 
 /*============================= END BOOKING FORM =============================*/
+
+/* 
 @media only screen and (min-width: 685px) and (max-width: 959px) {
     .nav-link {
         font-size: 1.4rem;
@@ -874,51 +877,126 @@ form p {
     footer {
         height: 14rem;
     }
+} */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .hamburger {
+    display:flex ;
+}
+.hamburger.active .line {
+    background-color: #fff;  
+}
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #F16041, #EE1E6F);
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    transition: top 650ms;
+    z-index: 1000;
+}
+.nav-link {
+    color: #fff;
+    font-size: 3rem;
+}
+.nav-list.active {
+    top: 0;
+}
+.nav-item::before {
+    background-color: #fff;
+}
+    .nav-link {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .tracklisting {
+    top: 85%;
+    width: 30rem;
+  }
+  .tracklist__body {
+    top: 135%;
+    left: 50%;
+    margin-right: -50%;
+    width: 30rem;
+  }
+  .tracklist__content {
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 2rem;
+    border-top: 1px solid;
+  }
+  
+  .Page404__image img {
+    width: 50rem;
+  }
+  footer {
+      height: 14rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display:flex ;
-    }
-    .hamburger.active .line {
-        background-color: #fff;  
-    }
-    .nav-list {
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(180deg, #F16041, #EE1E6F);
-        position: fixed;
-        left: 0;
-        top: -100vh;
-        transition: top 650ms;
-        z-index: 1000;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .hamburger {
+    display:flex ;
+}
+.hamburger.active .line {
+    background-color: #fff;  
+}
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #F16041, #EE1E6F);
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    transition: top 650ms;
+    z-index: 1000;
+}
+.nav-link {
+    color: #fff;
+    font-size: 3rem;
+}
+.nav-list.active {
+    top: 0;
+}
+.nav-item::before {
+    background-color: #fff;
+}
     .nav-link {
-        color: #fff;
-        font-size: 3rem;
-    }
-    .nav-list.active {
-        top: 0;
-    }
-    .nav-item::before {
-        background-color: #fff;
-    }
-/*============================= MOBILE PROFILE =============================*/
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .Page404__image img {
+    width: 50rem;
+  }
+  footer {
+      height: 14rem;
+  }
+    /*============================= MOBILE PROFILE =============================*/
     .profile__card {
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
-   .profile__picture--right {
+    }
+    .profile__picture--right {
       margin-right: 0;
-  }
-  .profile__picture {
+    }
+    .profile__picture {
       width: 40rem;
-  }
-  .profile__header {
+    }
+    .profile__header {
       background: -webkit-linear-gradient(var(--primary), var(--secondary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -926,33 +1004,33 @@ form p {
       font-size: 4rem;
       margin-bottom: 0rem;
       padding: 1rem;
-  }
-  .profile__text {
+    }
+    .profile__text {
       color: #8c8c8c;
       font-size: 1.5rem;
       line-height: 2.5rem;
       padding: 1rem;
-  }
-  .mix__link {
+    }
+    .mix__link {
     padding: 0rem 1rem 0rem inherit;
-  }
-  .profile--overlay {
+    }
+    .profile--overlay {
       margin-top: 0rem;
-  }
-  .profile__file {
+    }
+    .profile__file {
       display: flex;
       justify-content: center;
       margin: 5rem 0rem;
-  }
-  .profile__download {
+    }
+    .profile__download {
       font-size: 1.5rem;
       border: none;
       background-color: black;
       color: white;
       height: 5rem;
       width: 20rem;
-  }
-/*============================= END MOBILE PROFILE =============================*/
+    }
+    /*============================= END MOBILE PROFILE =============================*/
     .Page404__image img {
       width: 40rem;
     }
@@ -968,3 +1046,13 @@ form p {
         display: none;
     }
 }
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
