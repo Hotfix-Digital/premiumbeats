@@ -118,6 +118,7 @@ get_header();
                 </form>
             </div>
         </div>
+</div>
         <!--- .content -->
 <?php
 get_footer();
