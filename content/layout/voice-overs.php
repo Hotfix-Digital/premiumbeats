@@ -1,0 +1,66 @@
+<?php
+/**
+ * Get news posts available
+ */
+
+get_header();
+?>
+<div id="content" class="content">
+            <div class="container">
+                <h2 class="page__header">Voice Over</h2>
+                <div class="voice__masonry">
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202338318&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/idols-sa-theatre-weekend-w-telkom-rise-fm" title="IDOLS SA Theatre Weekend w/ TELKOM &amp; RISE fm" target="_blank" style="color: #cccccc; text-decoration: none;">IDOLS SA Theatre Weekend w/ TELKOM &amp; RISE fm</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/111260057&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/nelspruit-sixties-2013-english" title="Nelspruit Sixties 2013 English Radio Ad" target="_blank" style="color: #cccccc; text-decoration: none;">Nelspruit Sixties 2013 English Radio Ad</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/111258073&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/sixties-nelspruit-2013-sabc1" title="Sixties Nelspruit 2013 SABC1 LIVE AMP Ad" target="_blank" style="color: #cccccc; text-decoration: none;">Sixties Nelspruit 2013 SABC1 LIVE AMP Ad</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/110571277&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/nelspruit-sixties-2013-radio" title="Nelspruit Sixties 2013 Radio Ad" target="_blank" style="color: #cccccc; text-decoration: none;">Nelspruit Sixties 2013 Radio Ad</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993112&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/volvo-s60-t3-special-siswati" title="Volvo S60 T3 - Special siSwati VO" target="_blank" style="color: #cccccc; text-decoration: none;">Volvo S60 T3 - Special siSwati VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993108&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/peugeot-508-spacious-english" title="Peugeot 508 Spacious- English VO" target="_blank" style="color: #cccccc; text-decoration: none;">Peugeot 508 Spacious- English VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993110&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/trac-n4-siswati-vo" title="TRAC N4 - siSwati VO" target="_blank" style="color: #cccccc; text-decoration: none;">TRAC N4 - siSwati VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993109&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/peugeot-508-topclass-siswati" title="Peugeot 508 TopClass - siSwati VO" target="_blank" style="color: #cccccc; text-decoration: none;">Peugeot 508 TopClass - siSwati VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993106&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/nelspruit-multi-franchise" title="Nelspruit Multi Franchise - English VO" target="_blank" style="color: #cccccc; text-decoration: none;">Nelspruit Multi Franchise - English VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993105&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/karino-lifestyle-estate" title="Karino Lifestyle Estate - English VO" target="_blank" style="color: #cccccc; text-decoration: none;">Karino Lifestyle Estate - English VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993104&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/galitos-english-vo" title="Galitos - English VO" target="_blank" style="color: #cccccc; text-decoration: none;">Galitos - English VO</a></div>
+                    </div>
+                    <div class="grid">
+                        <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91993103&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/premiumbeatssa" title="Thebigzill Onair" target="_blank" style="color: #cccccc; text-decoration: none;">Thebigzill Onair</a> · <a href="https://soundcloud.com/premiumbeatssa/first-auto-club-siswati-vo" title="First Auto Club - siSwati VO" target="_blank" style="color: #cccccc; text-decoration: none;">First Auto Club - siSwati VO</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--- .content -->
+<?php
+get_footer();

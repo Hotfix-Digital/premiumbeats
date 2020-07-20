@@ -62,103 +62,17 @@ get_header();
                 <label for="name">Full Name</label>
                 <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="name" required>
                 <label for="name">Contact Number</label>
-                <input class="form__input form__input--fullname" type="text" placeholder="Contact Number" name="name">
+                <input class="form__input form__input--fullname" type="number" placeholder="Contact Number" name="name">
                 <label for="email">Email Address</label>
                 <input class="form__input form__input--email" type="email" placeholder="Email address" name="email" required>
-                <button class="form__button" type="submit">SIGN UP</button>
+                <button class="form__button" type="submit">Sign up</button>
             </form>
         </div>
         <!--.subscribe-->
-        <div class="news__higlights card">
-            <h1 class="news__header">NEWS HIGHLIGHTS</h1>
-            <div class="news__highlight">
-                <div class="highlight__header">
-                    <div class="date">
-                        <span class="day">26</span>
-                        <span class="month">May</span>
-                        <span class="year">2020</span>
-                    </div>
-                    <!--.date-->
-                    <ul class="highlight__icons">
-                        <li><a href="#" class="fa fa-bookmark-o"></a></li>
-                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                    </ul>
-                    <!--Add icons for article-->
-                </div>
-                <!--.highlight__header-->
-                <div class="highlight__body">
-                    <div class="highlight__content">
-                        <span class="highlight__author">Prince Radebe</span>
-                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
-                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                    <!--.highlight__content-->
-                </div>
-                <!--.highlight__body-->
-            </div>
-            <!--.news__highlight-->
-            <div class="news__highlight">
-                <div class="highlight__header">
-                    <div class="date">
-                        <span class="day">26</span>
-                        <span class="month">May</span>
-                        <span class="year">2020</span>
-                    </div>
-                    <!--.date-->
-                    <ul class="highlight__icons">
-                        <li><a href="#" class="fa fa-bookmark-o"></a></li>
-                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                    </ul>
-                    <!--Add icons for article-->
-                </div>
-                <!--.highlight__header-->
-                <div class="highlight__body">
-                    <div class="highlight__content">
-                        <span class="highlight__author">Prince Radebe</span>
-                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
-                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                    <!--.highlight__content-->
-                </div>
-                <!--.highlight__body-->
-            </div>
-            <!--.news__highlight-->
-            <div class="news__highlight">
-                <div class="highlight__header">
-                    <div class="date">
-                        <span class="day">26</span>
-                        <span class="month">May</span>
-                        <span class="year">2020</span>
-                    </div>
-                    <!--.date-->
-                    <ul class="highlight__icons">
-                        <li><a href="#" class="fa fa-bookmark-o"></a></li>
-                        <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-                    </ul>
-                    <!--Add icons for article-->
-                </div>
-                <!--.highlight__header-->
-                <div class="highlight__body">
-                    <div class="highlight__content">
-                        <span class="highlight__author">Prince Radebe</span>
-                        <h1 class="highlight__title"><a href="#">The next big thing is coming</a></h1>
-                        <p class="highlight__text">Premium Beats will be launching a website very soon.</p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                    <!--.highlight__content-->
-                </div>
-                <!--.highlight__body-->
-            </div>
-            <!--.news__highlight-->
-        </div>
-        <!--.news__highlights card-->
     </div><!-- end of .container -->
 </div>
 <!--- .content -->
 <?php
+
 get_footer();
+?>

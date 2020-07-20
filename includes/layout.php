@@ -5,31 +5,40 @@
  * 
  */
 
+$routing = new routing;
+ 
 function get_header() {
-    include("content/layout/header.php");
+    require("content/layout/header.php");
 }
 
 function get_footer() {
-    include("content/layout/footer.php");
+    require("content/layout/footer.php");
 }
 
-function get_layout_404() {
-    include("content/layout/404.php");
+function is_search() {
+    global $routing;
+
+    return $routing->is_search();
 }
 
-function get_layout_home() {
-    include("content/layout/index.php");
+function is_404() {
+    global $routing;
+
+    return $routing->is_404();
 }
 
-function get_layout_post() {
-    include("content/layout/post.php");
-}
+function is_page() {
+    global $routing;
 
-function get_layout_search() {
-    include("content/layout/search.php");
+    if(!isset($routing)) {
+        return false;
+    }
+
+    return $routing->is_page();
 }
 
 function is_home() {
+<<<<<<< HEAD
     return false;
 }
 
@@ -37,5 +46,18 @@ if(is_home()) {
     get_layout_home();
 } else {
     get_layout_404();
+=======
+    global $routing;
+
+    if(!isset($routing)) {
+        return false;
+    }
+
+    return $routing->is_home();
+}
+
+function load_layout() {
+    require_once("content/layout/index.php");
+>>>>>>> 91f53103a176680471c2465a13c0533d7bf089aa
 }
 
