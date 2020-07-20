@@ -30,10 +30,12 @@ function get_layout_search() {
 }
 
 function is_home() {
-    return true;
+    return false;
 }
 
 if(is_home()) {
     get_layout_home();
+} else {
+    get_layout_404();
 }
 
