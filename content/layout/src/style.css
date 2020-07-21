@@ -117,7 +117,7 @@ nav {
   background-color: #1c1c1c;
 }
 #one {
-  background-image: url("../assets/slider/slide1.jpg");
+  background-image: url("../../layout/assets/slider/slide1.jpg");
   background-size: cover;
 }
 #two {
@@ -240,6 +240,7 @@ nav {
 }
 .subscribe__header, .news__header {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .subscribe__text {
   font-size: 1.5rem;
@@ -248,10 +249,24 @@ nav {
 
 .form__input {
   -webkit-appearance: none;
-  height: 4rem;
+  background-color: #f6f6f6;
+  font-size: 1.6rem;
+  color: inherit;
   border: none;
-  box-shadow: 0px 3px 6px #00000029;
-  padding: 1rem;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 2rem;
+  padding: 1.7rem 1.5rem 1.8rem;
+  height: 5rem;
+  border-radius: .2rem;
+  outline: none;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  background-size: 0 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .subscribe__form label {
   display: none;
@@ -270,7 +285,8 @@ nav {
   width: 50rem;
 }
 .form__button {
-  height: 4rem;
+  font-size: 1.6rem;
+  height: 5rem;
   width: 10rem;
   color: var(--white);
   border: none;
@@ -307,7 +323,9 @@ a:visited {
     font-size: .6rem;
     transition: .3s cubic-bezier(.07,.04,.09,1.68);
 }
-
+.fa-stack {
+  color: black;
+}
 footer h4 {
     font-size: 1rem;
     /* display: block; */
@@ -607,7 +625,7 @@ footer h4 {
     justify-content: center;
     margin: 10rem 0rem;
 }
-.profile__download {
+.profile__download, .tracklisting {
     font-size: 1.5rem;
     border: none;
     background-color: black;
@@ -615,7 +633,56 @@ footer h4 {
     height: 5rem;
     width: 50rem;
 }
+
+
 /*============================= END PROFILE =============================*/
+
+/*============================= TRACKLIST =============================*/
+
+.tracklisting::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.tracklisting.active::after {
+  content: "\2212";
+}
+ol {
+  list-style-position:inside;
+}
+.mix__hour, .mix__title {
+  margin-bottom: 2rem;
+}
+.tracklist__body {
+  /* padding: 1rem; */
+  text-align: left;
+  z-index: 10000;
+  position: absolute;
+  top: 118%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  max-height: 0;
+  width: 50rem;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  transition: max-height 0.2s ease-out;
+  border-radius: 0 0 2px 2px;
+}
+.tracklist__content {
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: auto;
+  line-height: 2rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/*============================= END TRACKLIST =============================*/
 
 /*============================= 404 =============================*/
 .Page404 {
@@ -704,22 +771,29 @@ footer h4 {
   transform: translate(-50%, -50%)
 }
 .mix__17 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
+}
+.tracklisting {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 /* .mix__17:hover {
   scale: ;
 } */
 .mix__16 {
-  background-image: url("/assets/mix-images/mix__PB016.png");
+  background-image: url("../assets/mix-images/mix__PB016.png");
 }
 .mix__15 {
-  background-image: url("/assets/mix-images/mix__PB015.png");
+  background-image: url("../assets/mix-images/mix__PB015.png");
 }
 .mix__14 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
 }
 .mix__13 {
-  background-image: url("/assets/mix-images/mix__PB017.png");
+  background-image: url("../assets/mix-images/mix__PB017.png");
 }
 
 /*============================= BOOKING FORM =============================*/
@@ -728,13 +802,18 @@ form {
   padding: 20px;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0 0 20px 0 #c0c0c0; 
+  /* box-shadow: 0 0 20px 0 #c0c0c0;  */
+}
+form p {
+  font-size: 1.6rem;
 }
 .form__button--booking, .form__input--booking {
   margin: 1rem 0;
   width: 100%;
 }
-
+.field {
+  margin-bottom: 2rem;
+}
 
 .checkbox {
   margin: 1rem 0;;
@@ -781,7 +860,10 @@ form {
   transform: scale(0);
 }
 
+
 /*============================= END BOOKING FORM =============================*/
+
+/* 
 @media only screen and (min-width: 685px) and (max-width: 959px) {
     .nav-link {
         font-size: 1.4rem;
@@ -795,51 +877,126 @@ form {
     footer {
         height: 14rem;
     }
+} */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .hamburger {
+    display:flex ;
+}
+.hamburger.active .line {
+    background-color: #fff;  
+}
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #F16041, #EE1E6F);
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    transition: top 650ms;
+    z-index: 1000;
+}
+.nav-link {
+    color: #fff;
+    font-size: 3rem;
+}
+.nav-list.active {
+    top: 0;
+}
+.nav-item::before {
+    background-color: #fff;
+}
+    .nav-link {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .tracklisting {
+    top: 85%;
+    width: 30rem;
+  }
+  .tracklist__body {
+    top: 135%;
+    left: 50%;
+    margin-right: -50%;
+    width: 30rem;
+  }
+  .tracklist__content {
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 2rem;
+    border-top: 1px solid;
+  }
+  
+  .Page404__image img {
+    width: 50rem;
+  }
+  footer {
+      height: 14rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display:flex ;
-    }
-    .hamburger.active .line {
-        background-color: #fff;  
-    }
-    .nav-list {
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(180deg, #F16041, #EE1E6F);
-        position: fixed;
-        left: 0;
-        top: -100vh;
-        transition: top 650ms;
-        z-index: 1000;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .hamburger {
+    display:flex ;
+}
+.hamburger.active .line {
+    background-color: #fff;  
+}
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #F16041, #EE1E6F);
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    transition: top 650ms;
+    z-index: 1000;
+}
+.nav-link {
+    color: #fff;
+    font-size: 3rem;
+}
+.nav-list.active {
+    top: 0;
+}
+.nav-item::before {
+    background-color: #fff;
+}
     .nav-link {
-        color: #fff;
-        font-size: 3rem;
-    }
-    .nav-list.active {
-        top: 0;
-    }
-    .nav-item::before {
-        background-color: #fff;
-    }
-/*============================= MOBILE PROFILE =============================*/
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  .Page404__image img {
+    width: 50rem;
+  }
+  footer {
+      height: 14rem;
+  }
+    /*============================= MOBILE PROFILE =============================*/
     .profile__card {
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
-   .profile__picture--right {
+    }
+    .profile__picture--right {
       margin-right: 0;
-  }
-  .profile__picture {
+    }
+    .profile__picture {
       width: 40rem;
-  }
-  .profile__header {
+    }
+    .profile__header {
       background: -webkit-linear-gradient(var(--primary), var(--secondary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -847,33 +1004,33 @@ form {
       font-size: 4rem;
       margin-bottom: 0rem;
       padding: 1rem;
-  }
-  .profile__text {
+    }
+    .profile__text {
       color: #8c8c8c;
       font-size: 1.5rem;
       line-height: 2.5rem;
       padding: 1rem;
-  }
-  .mix__link {
+    }
+    .mix__link {
     padding: 0rem 1rem 0rem inherit;
-  }
-  .profile--overlay {
+    }
+    .profile--overlay {
       margin-top: 0rem;
-  }
-  .profile__file {
+    }
+    .profile__file {
       display: flex;
       justify-content: center;
       margin: 5rem 0rem;
-  }
-  .profile__download {
+    }
+    .profile__download {
       font-size: 1.5rem;
       border: none;
       background-color: black;
       color: white;
       height: 5rem;
       width: 20rem;
-  }
-/*============================= END MOBILE PROFILE =============================*/
+    }
+    /*============================= END MOBILE PROFILE =============================*/
     .Page404__image img {
       width: 40rem;
     }
@@ -889,3 +1046,13 @@ form {
         display: none;
     }
 }
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
