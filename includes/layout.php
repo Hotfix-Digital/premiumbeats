@@ -38,15 +38,6 @@ function is_page() {
 }
 
 function is_home() {
-<<<<<<< HEAD
-    return false;
-}
-
-if(is_home()) {
-    get_layout_home();
-} else {
-    get_layout_404();
-=======
     global $routing;
 
     if(!isset($routing)) {
@@ -58,6 +49,5 @@ if(is_home()) {
 
 function load_layout() {
     require_once("content/layout/index.php");
->>>>>>> 91f53103a176680471c2465a13c0533d7bf089aa
 }
 

@@ -1,10 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-<<<<<<< HEAD
-RewriteBase /premiumbeats
-=======
 RewriteBase /premiumbeats/
->>>>>>> 91f53103a176680471c2465a13c0533d7bf089aa
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [L]

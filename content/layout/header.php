@@ -59,10 +59,10 @@
                     <li class="nav-item">
                         <a href="bookings" class="nav-link">Bookings</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="profile" class="nav-link">Profile</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a href="login.php" class="nav-link login">Login</a>
                     </li> -->
                 </ul>

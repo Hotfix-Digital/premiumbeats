@@ -1,15 +1,10 @@
 <?php
 /**
-<<<<<<< HEAD
- * 
- * Do your thing, RomeoBeats!
- * 
- * Ah! He did it again.
- * 
- */
-=======
  * Get news posts available
  */
+
+/** Temporarily Redirect to Bookings */
+header("Location: bookings");
 
 get_header();
 ?>
@@ -70,4 +65,3 @@ get_header();
 <!--- .content -->
 <?php
 get_footer();
->>>>>>> 91f53103a176680471c2465a13c0533d7bf089aa
