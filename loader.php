@@ -31,7 +31,7 @@ if(defined("SITE_HOME")) {
           require($file);
         }
       } else {
-        require("'content/layout/index.php'");
+        require("content/layout/index.php");
       }
     }
   }
