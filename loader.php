@@ -26,8 +26,12 @@ if(defined("SITE_HOME")) {
   } else {
     $path = explode("/", $path);
     foreach($routes as $route => $file) {
-      if($route == "/$path[1]") {
+      if(isset($path[1])) {
+        if($route == "/$path[1]") {
           require($file);
+        }
+      } else {
+        require("'content/layout/index.php'");
       }
     }
   }
