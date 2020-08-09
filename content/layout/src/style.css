@@ -1081,7 +1081,9 @@ form p {
     height: 5rem;
     width: 10rem;
   }
-  
+  #nav_slide {
+    display: none;
+  }
   .large {
     font-size: 100px;
   }
@@ -1161,6 +1163,9 @@ form p {
     }
     .large {
       font-size: 200px;
+    }
+    #nav_slide {
+      display: none;
     }
   /* End Slider */
   .Page404__image img {
