@@ -310,6 +310,23 @@ nav {
   margin-bottom: 2rem;
 }
 
+.input {
+  width: 100%;
+}
+
+.input__group {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin: 0px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1.6rem;
+}
+
+.form__control,
 .form__input {
   -webkit-appearance: none;
   background-color: #f6f6f6;
@@ -341,6 +358,10 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.form__control--textarea {
+  resize: none;
 }
 
 .form__input--fullname {
