@@ -32,6 +32,7 @@
 <meta name="msapplication-TileImage" content="content/layout/assets/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="content/layout/src/main.js"></script>
 <script src="https://kit.fontawesome.com/bbdbc1be2c.js" crossorigin="anonymous"></script>
 </head>
