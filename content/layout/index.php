@@ -82,7 +82,7 @@ get_header();
     <div class="container">
         <div class="player">
             <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
                 frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb018-feat.-que-hiber/" target="_blank">PB018
                         Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
