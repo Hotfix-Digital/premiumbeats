@@ -59,6 +59,7 @@ header {
 
 .content {
   margin-top: 8rem;
+  overflow: hidden;
 }
 
 main {
