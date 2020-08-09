@@ -6,6 +6,51 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__18">
+        <div class="container mix__player">
+        <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150" src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay"><p>Listen to <a href="https://hearthis.at/premiumbeats/pb018-feat.-que-hiber/" target="_blank">PB018 Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank" >Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p></iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 018</h2>
+                    <h2>1st Hour Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>Look What You're Doin' To Me (Motor City Drum Ensemble Remix) - Jazzanova  feat. Phonte, Jazzanova</li>
+                        <li>Milk & Honey (feat. Fka Mash) - Punk Mbedzi</li>
+                        <li>Find a Way - Citizen Deep & Azola</li>
+                        <li>Enemies (Kususa Sophomore Dub) - DJ Sekza</li>
+                        <li>Roam in a Day - Frigid Armadillo</li>
+                        <li>Technokrat - Candy Man </li>
+                        <li>Kwanele (feat. Bukeka) [Remix] - Stones & Bones</li>
+                        <li>Don't Let Me Go (feat. Malehloka & Miss P) - Djeff & Black Motion</li>
+                        <li>Drunk Robots - Silva DaDj & Nitefreak</li>
+                        <li>Love Being African (feat. Tee-R) [Candy Man Remix] - Dj Jim Mastershine & Teer</li>
+                        <li>Babel - DJ Angelo</li>
+                        <li>Cobra XL (Ed-Ward Remix) - Martin Iveson</li>
+                        <li>Zwakala - Citizen Deep</li>
+                    </ol>
+                    <h2>2nd Hour Mixed by Que Hiber</h2>
+                    <ol class="mix__hour">
+                        <li>Trevor G - Emotions All Over The Place (Main Personal Feel )</li>
+                        <li>The Godfathers - Arabic (Nostalgic Mix)</li>
+                        <li>Chronical Deep - Go Maruru ( Original Mix)</li>
+                        <li>Sbhekelash x LA Four SA - Siyalimaza (Aquatic Mix)</li>
+                        <li>Benediction - Krickman (Dub Mix)</li>
+                        <li>DJ Jim Mastershine - Aba Lalele </li>
+                        <li>Benediction - Mama</li>
+                        <li>Hanna Hais, Diama Ndiaye, Chanell Collen - Waloy (Chanell Collen Remix)</li>
+                        <li>Naazormaker Musique - Stolen Philosophy (Naazor Glitched Mix)</li>
+                        <li>Individualist - Commando (Chronical Deep Claps Back)</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__17">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_4713723" width="100%" height="150"
