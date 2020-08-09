@@ -78,46 +78,49 @@ get_header();
             <div class="container">
                 <!-- BO0KING FORM -->
                 <form class="form" method="POST" onsubmit="submitBooking(event)">
+                    <div class="banner">
+                        <h2 class="profile__header">Premium Beats Booking Form</h2>
+                    </div>
                     <div class="input">
                         <div class="input__group">
-                            <label>Type of Event</label>
-                            <input type="text" name="event_type" id="event_type" class="form__control form__control--booking">
+                            <label class="form__label">Type of Event</label>
+                            <input type="text" name="event_type" id="event_type" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Date of Event</label>
-                            <input type="text" name="event_date" id="event_date" class="form__control form__control--booking">
+                            <label class="form__label">Date of Event</label>
+                            <input type="date" name="event_date" id="event_date" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Time of Event</label>
-                            <input type="text" name="event_time" id="event_time" class="form__control form__control--booking">
+                            <label class="form__label">Time of Event</label>
+                            <input type="time" name="event_time" id="event_time" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Description of Event</label>
-                            <input type="text" name="event_desc" id="event_desc" class="form__control form__control--booking">
+                            <label class="form__label">Description of Event</label>
+                            <input type="text" name="event_desc" id="event_desc" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Name of Venue</label>
-                            <input type="text" name="venue_name" id="venue_name" class="form__control form__control--booking">
+                            <label class="form__label">Name of Venue</label>
+                            <input type="text" name="venue_name" id="venue_name" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Capacity of Venue</label>
-                            <input type="text" name="venue_capacity" id="venue_capacity" class="form__control form__control--booking">
+                            <label class="form__label">Capacity of Venue</label>
+                            <input type="text" name="venue_capacity" id="venue_capacity" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Address of Venue</label>
-                            <textarea name="venue_address" id="venue_address" class="form__control form__control--booking"></textarea>
+                            <label class="form__label">Address of Venue</label>
+                            <textarea name="venue_address" rows="10" id="venue_address" class="form__control form__control--textarea"></textarea>
                         </div>
                         <div class="input__group">
-                            <label>Name of Promoter</label>
-                            <input type="text" name="promoter_name" id="promoter_name" class="form__control form__control--booking">
+                            <label class="form__label">Name of Promoter</label>
+                            <input type="text" name="promoter_name" id="promoter_name" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Email of Promoter</label>
-                            <input type="text" name="promoter_email" id="promoter_email" class="form__control form__control--booking">
+                            <label class="form__label">Email of Promoter</label>
+                            <input type="email" name="promoter_email" id="promoter_email" class="form__control">
                         </div>
                         <div class="input__group">
-                            <label>Contact of Promoter</label>
-                            <input type="text" name="promoter_contact" id="promoter_contact" class="form__control form__control--booking">
+                            <label class="form__label">Contact of Promoter</label>
+                            <input type="text" name="promoter_contact" id="promoter_contact" class="form__control">
                         </div>
                     </div>
                     <div class="form__group">
