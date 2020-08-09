@@ -5,24 +5,17 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
-    if($_POST['bdate'] && $_POST['time'] && $_POST['description'] && $_POST['promoter'] && $_POST['venue'] && $_POST['street1'] && $_POST['street2'] && $_POST['region'] && $_POST['city'] && $_POST['code'] && $_POST['capacity'] && $_POST['attendance'] && $_POST['event'] && $_POST['duration'] && $_POST['contactperson'] && $_POST['contactemail'] && $_POST['contactnumber']) {
-        $bdate = $_POST['bdate'];
-        $time = $_POST['time'];
-        $description = $_POST['description'];
-        $promoter = $_POST['promoter'];
-        $venue = $_POST['venue'];
-        $street1 = $_POST['street1'];
-        $street2 = $_POST['street2'];
-        $region = $_POST['region'];
-        $city = $_POST['city'];
-        $code = $_POST['code'];
-        $capacity = $_POST['capacity'];
-        $attendance = $_POST['attendance'];
-        $event = $_POST['event'];
-        $duration = $_POST['duration'];
-        $contactperson = $_POST['contactperson'];
-        $contactemail = $_POST['contactemail'];
-        $contactnumber = $_POST['contactnumber'];
+    if($event_desc = $_POST['event_desc'] && $event_type = $_POST['event_type'] && $event_time = $_POST['event_time'] && $event_date = $_POST['event_date'] && $venue_name = $_POST['venue_name'] && $venue_address = $_POST['venue_address'] && $venue_capacity = $_POST['venue_capacity'] && $promoter_name = $_POST['promoter_name'] && $promoter_email = $_POST['promoter_email'] && $promoter_contact = $_POST['promoter_contact']) {
+        $event_desc = $_POST['event_desc'];
+        $event_type = $_POST['event_type'];
+        $event_time = $_POST['event_time'];
+        $event_date = $_POST['event_date'];
+        $venue_name = $_POST['venue_name'];
+        $venue_address = $_POST['venue_address'];
+        $venue_capacity = $_POST['venue_capacity'];
+        $promoter_name = $_POST['promoter_name'];
+        $promoter_email = $_POST['promoter_email'];
+        $promoter_contact = $_POST['promoter_contact'];
 
         $to = "luphondog@gmail.com, princeradebe@gmail.com";
         $subject = "Booking Request";
@@ -35,24 +28,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <body>
         <p>This email contains HTML Tags!</p>
         <ul>
-        <li>$bdate</li>
-        <li>$time</li>
-        <li>$description</li>
-        <li>$street1</li>
-        <li>$street2</li>
-        <li>$region</li>
-        <li>$city</li>
-        <li>$code</li>
-        <li>$capacity</li>
-        <li>$attendance</li>
-        <li>$event</li>
-        <li>$duration</li>
+        <li>$event_type</li>
+        <li>$event_date</li>
+        <li>$event_time</li>
+        <li>$event_desc</li>
+        <li>$venue_address</li>
+        <li>$venue_capacity</li>
+        <li>$venue_address</li>
         <ul>
         <ul>
-        <li>$promoter</li>
-        <li>$contactperson</li>
-        <li>$contactemail</li>
-        <li>$contactnumber</li>
+        <li>Promoter Details</li>
+        <li>$promoter_name</li>
+        <li>$promoter_email</li>
+        <li>$promoter_contact</li>
         </ul>
         </body>
         </html>
@@ -64,6 +52,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= 'Cc: luphondog@yahoo.com' . "\r\n";
 
         mail($to,$subject,$message,$headers);
+    } else {
+        if(!$_POST['event_desc']) $errors[] = "Event description is required.";
+        if(!$_POST['event_type']) $errors[] = "Let us know what type of event this will be.";
+        if(!$_POST['event_time']) $errors[] = "State the time at which the event will start.";
+        if(!$_POST['event_date']) $errors[] = "A date is important for scheduling purposes.";
+        if(!$_POST['venue_name']) $errors[] = "The name of the venue of the event is needed.";
+        if(!$_POST['venue_address']) $errors[] = "For proper planning, the address of the venue is needed.";
+        if(!$_POST['venue_capacity']) $errors[] = "Event description is required.";
+        if(!$_POST['promoter_name']) $errors[] = "Let us know who you are.";
+        if(!$_POST['promoter_email']) $errors[] = "We need to know where to responde to.";
+        if(!$_POST['promoter_contact']) $errors[] = "We might want to give you a call.";
+
+        if($errors) {
+            foreach($errors as $error) {
+                echo("<p>$error</p>");
+            }
+            exit;
+        }
     }
 }
 get_header();
@@ -71,114 +77,86 @@ get_header();
 <div id="content" class="content">
             <div class="container">
                 <!-- BO0KING FORM -->
-                <form method="POST">
-                    <div class="banner">
-                        <h2 class="profile__header">Premium Beats Booking Form</h2>
-                    </div>
-                    <div class="field">
-                        <p>Date of Event</p>
-                        <input class="form__input form__input--booking" type="date" name="bdate" />
-                    </div>
-                    <div class="field">
-                        <p>Time of Event</p>
-                        <input class="form__input form__input--booking" type="time" name="time" />
-                    </div>
-                    <!-- <div class="field">
-                        <p>Artist to book</p>
-                        <select class="form__input form__input--booking">
-                            <option value=""></option>
-                            <option value="1">*Please select*</option>
-                            <option value="2">Artist 1</option>
-                            <option value="3">Artist 2</option>
-                            <option value="4">Artist 3</option>
-                            <option value="5">Artist 4</option>
-                        </select>
-                    </div> -->
-                    <div class="field">
-                        <p>Description of Event</p>
-                        <textarea class="form__input form__input--booking" rows="10" name="description"></textarea>
-                    </div>
-                    <div class="field">
-                        <p>Promoter's Name</p>
-                        <input class="form__input form__input--booking" type="text" name="promoter" />
-                    </div>
-                    <div class="field">
-                        <p>Venue Name</p>
-                        <input class="form__input form__input--booking" type="text" name="venue" />
-                    </div>
-                    <div class="field">
-                        <p>Venue Address</p>
-                        <input class="form__input form__input--booking" type="text" name="street1" placeholder="Street address" />
-                        <input class="form__input form__input--booking" type="text" name="street1" placeholder="Street address line 2" />
-                        <div class="city-field">
-                            <input class="form__input form__input--booking" type="text" name="city" placeholder="City" />
-                            <input class="form__input form__input--booking"  type="text" name="region" placeholder="Region" />
-                            <input class="form__input form__input--booking"  type="text" name="code" placeholder="Postal code" />
-                            <select class="form__input form__input--booking">
-                                <option value="">Country</option>
-                                <option value="1">South Africa</option>
-                                <option value="2">Swaziland</option>
-                                <option value="3">Lesotho</option>
-                                <option value="4">Botswana</option>
-                                <option value="5">Mozambique</option>
-                            </select>
+                <form class="form" method="POST" onsubmit="submitBooking(event)">
+                    <div class="input">
+                        <div class="input__group">
+                            <label>Type of Event</label>
+                            <input type="text" name="event_type" id="event_type" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Date of Event</label>
+                            <input type="text" name="event_date" id="event_date" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Time of Event</label>
+                            <input type="text" name="event_time" id="event_time" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Description of Event</label>
+                            <input type="text" name="event_desc" id="event_desc" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Name of Venue</label>
+                            <input type="text" name="venue_name" id="venue_name" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Capacity of Venue</label>
+                            <input type="text" name="venue_capacity" id="venue_capacity" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Address of Venue</label>
+                            <textarea name="venue_address" id="venue_address" class="form__control form__control--booking"></textarea>
+                        </div>
+                        <div class="input__group">
+                            <label>Name of Promoter</label>
+                            <input type="text" name="promoter_name" id="promoter_name" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Email of Promoter</label>
+                            <input type="text" name="promoter_email" id="promoter_email" class="form__control form__control--booking">
+                        </div>
+                        <div class="input__group">
+                            <label>Contact of Promoter</label>
+                            <input type="text" name="promoter_contact" id="promoter_contact" class="form__control form__control--booking">
                         </div>
                     </div>
-                    <div class="field">
-                        <p>Venue Capacity</p>
-                        <input class="form__input form__input--booking" type="number" name="capacity" />
+                    <div class="form__group">
+                        <input type="submit" value="Submit Booking" class="form__button form__button--booking">
                     </div>
-                    <div class="field">
-                        <p>Expected Attendance</p>
-                        <input class="form__input form__input--booking" type="number" name="attendance" />
-                    </div>
-                    <div class="field">
-                        <div class="question">
-                            <p>EVENT TYPE:<span class="required">*</span></p>
-                            <div class="question-answer checkbox-field">
-                                <div class="checkbox">
-                                    <input type="checkbox" value="none" id="check_1" name="event" required />
-                                    <label for="check_1" class="check"><span>CLUB</span></label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" value="none" id="check_2" name="event" required />
-                                    <label for="check_2" class="check"><span>FESTIVAL</span></label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" value="none" id="check_3" name="event" required />
-                                    <label for="check_3" class="check"><span>CORPORATE</span></label>
-                                </div>
-                            </div> 
-                            <div class="field">
-                            <p>Set Time (in minutes)</p>
-                            <input class="form__input form__input--booking" type="number" name="duration" />
-                        </div>
-                        <div class="field">
-                            <p>Contact Person</p>
-                            <div class="name-field">
-                                <input class="form__input form__input--booking" type="text" name="contactperson" placeholder="Full Name" />
-                            </div>
-                        </div>
-                        <div class="field">
-                            <p>Contact Email</p>
-                            <input class="form__input form__input--booking" type="email" name="contactemail" />
-                        </div>
-                        <div class="field">
-                            <p>Contact Number</p>
-                            <input class="form__input form__input--booking" type="tel" name="contactnumber" />
-                        </div>
-                        <!-- <div class="question">
-                            <div class="question-answer checkbox-field">
-                                <div>
-                                    <input type="checkbox" value="none" id="check_9" name="check" required />
-                                    <label for="check_9" class="check"><span>I agree to the <a href="#">terms of service.</a></span></label>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="btn-block">
-                            <button class="form__button form__button--booking" type="submit" href="/">Send</button>
-                        </div>
                 </form>
+                <script>
+                function submitBooking(event) {
+                    event.preventDefault();
+                    let errors = [];
+                    let event_desc = document.getElementById("event_desc").value;
+                    let event_date = document.getElementById("event_date").value;
+                    let event_time = document.getElementById("event_time").value;
+                    let event_type = document.getElementById("event_type").value;
+                    let venue_name = document.getElementById("venue_name").value;
+                    let venue_address = document.getElementById("venue_address").text;
+                    let venue_capacity = document.getElementById("venue_capacity").value;
+                    let promoter_name = document.getElementById("promoter_name").value;
+                    let promoter_email = document.getElementById("promoter_email").value;
+                    let promoter_contact = document.getElementById("promoter_contact").value;
+
+                    if(event_desc && event_date && event_time && event_type && venue_name && venue_address && venue_capacity && promoter_name && promoter_email && promoter_contact) {
+                        console.log("ready to submit booking.");
+                    } else {
+                        errors = [];
+                        if(!event_desc) errors.push("Event description is required.");
+                        if(!event_type) errors.push("Let us know what type of event this will be.");
+                        if(!event_time) errors.push("State the time at which the event will start.");
+                        if(!event_date) errors.push("A date is important for scheduling purposes.");
+                        if(!venue_name) errors.push("The name of the venue of the event is needed.");
+                        if(!venue_address) errors.push("For proper planning, the address of the venue is needed.");
+                        if(!venue_capacity) errors.push("Event description is required.");
+                        if(!promoter_name) errors.push("Let us know who you are.");
+                        if(!promoter_email) errors.push("We need to know where to responde to.");
+                        if(!promoter_contact) errors.push("We might want to give you a call.");
+                        console.log(errors);
+                    }
+                }
+                </script>
             </div>
         </div>
 </div>
