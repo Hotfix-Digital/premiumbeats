@@ -1,8 +1,4 @@
 <?php
-/**
- * Get news posts available
- */
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
     $alerts = array();
