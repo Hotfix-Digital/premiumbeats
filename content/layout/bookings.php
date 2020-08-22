@@ -49,7 +49,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= 'Cc: luphondog@yahoo.com' . "\r\n";
 
         if(mail($to,$subject,$message,$headers)) {
-            $alerts[] = "Email sent successfully.";
+            $alerts[] = "Your booking enquity was sent successfully.";
         }
     } else {
         if(!$_POST['event_desc']) $errors[] = "Event description is required.";
@@ -154,39 +154,6 @@ endif;
                         <input type="submit" value="Submit Booking" class="form__button form__button--booking">
                     </div>
                 </form>
-                <!-- <script>
-                function submitBooking(event) {
-                    event.preventDefault();
-                    let errors = [];
-                    let event_desc = document.getElementById("event_desc").value;
-                    let event_date = document.getElementById("event_date").value;
-                    let event_time = document.getElementById("event_time").value;
-                    let event_type = document.getElementById("event_type").value;
-                    let venue_name = document.getElementById("venue_name").value;
-                    let venue_address = document.getElementById("venue_address").text;
-                    let venue_capacity = document.getElementById("venue_capacity").value;
-                    let promoter_name = document.getElementById("promoter_name").value;
-                    let promoter_email = document.getElementById("promoter_email").value;
-                    let promoter_contact = document.getElementById("promoter_contact").value;
-
-                    if(event_desc && event_date && event_time && event_type && venue_name && venue_address && venue_capacity && promoter_name && promoter_email && promoter_contact) {
-                        console.log("ready to submit booking.");
-                    } else {
-                        errors = [];
-                        if(!event_desc) errors.push("Event description is required.");
-                        if(!event_type) errors.push("Let us know what type of event this will be.");
-                        if(!event_time) errors.push("State the time at which the event will start.");
-                        if(!event_date) errors.push("A date is important for scheduling purposes.");
-                        if(!venue_name) errors.push("The name of the venue of the event is needed.");
-                        if(!venue_address) errors.push("For proper planning, the address of the venue is needed.");
-                        if(!venue_capacity) errors.push("Event description is required.");
-                        if(!promoter_name) errors.push("Let us know who you are.");
-                        if(!promoter_email) errors.push("We need to know where to responde to.");
-                        if(!promoter_contact) errors.push("We might want to give you a call.");
-                        console.log(errors);
-                    }
-                }
-                </script> -->
             </div>
         </div>
 </div>
