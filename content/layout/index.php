@@ -13,11 +13,9 @@ get_header();
         <input type="radio" id="i1" name="images" checked />
         <input type="radio" id="i2" name="images" />
         <input type="radio" id="i3" name="images" />
-        <!-- <input type="radio" id="i4" name="images" /> -->
+        <input type="radio" id="i4" name="images" />
 
         <div class="slide_img" id="one">
-
-
             <h1 class="large">MIXES</h1>
             <div class="slider__text">
                 <!-- <img class="slider__logo" src="content/layout/assets/premiumbeats-logo-color-01-small.png" alt=""> -->
@@ -33,16 +31,12 @@ get_header();
         </div>
 
         <div class="slide_img" id="two">
-
             <h1 class="large">VOICEOVER</h1>
             <div class="slider__text">
                 <!-- <img class="slider__logo" src="content/layout/assets/premiumbeats-logo-color-01-small.png" alt=""> -->
-                <h1>VOICE OVER | RADIO | IMAGING</h1>
+                <h1>VOICE OVERS</h1>
                 <a href="voice-overs"><button class="slider__button">
-                        Voice Overs
-                    </button></a>
-                <a href="gallery"><button class="slider__button">
-                        Gallery
+                        Listen
                     </button></a>
             </div>
 
@@ -52,7 +46,20 @@ get_header();
         </div>
 
         <div class="slide_img" id="three">
+            <h1 class="large">GALLERY</h1>
+            <div class="slider__text">
+                <!-- <img class="slider__logo" src="content/layout/assets/premiumbeats-logo-color-01-small.png" alt=""> -->
+                <h1>SEE OUR GALLERY</h1>
+                <a href="gallery"><button class="slider__button">
+                        Gallery
+                    </button></a>
+            </div>
 
+            <label class="prev" for="i2"><span>&#x2039;</span></label>
+            <label class="next" for="i4"><span>&#x203a;</span></label>
+        </div>
+
+        <div class="slide_img" id="four">
             <h1 class="large">BOOKINGS</h1>
             <div class="slider__text">
                 <!-- <img class="slider__logo" src="content/layout/assets/premiumbeats-logo-color-01-small.png" alt=""> -->
@@ -62,21 +69,15 @@ get_header();
                     </button></a>
             </div>
 
-            <label class="prev" for="i2"><span>&#x2039;</span></label>
-            <label class="next" for="i4"><span>&#x203a;</span></label>
-        </div>
-
-        <!-- <div class="slide_img" id="four">
-
             <label class="prev" for="i3"><span>&#x2039;</span></label>
             <label class="next" for="i5"><span>&#x203a;</span></label>
-        </div> -->
+        </div>
 
         <div id="nav_slide">
             <label for="i1" class="dots" id="dot1"></label>
             <label for="i2" class="dots" id="dot2"></label>
             <label for="i3" class="dots" id="dot3"></label>
-            <!-- <label for="i4" class="dots" id="dot4"></label> -->
+            <label for="i4" class="dots" id="dot4"></label>
         </div>
     </div> <!-- end of .slide__show -->
     <div class="container">

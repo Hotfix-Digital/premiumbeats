@@ -1,6 +1,7 @@
     <footer>
         <div class="container">
-            <img class="footer-logo" src="content/layout/assets/premiumbeats-logo-black-01.png" alt="logo" width="150px">
+            <img class="footer-logo" src="content/layout/assets/premiumbeats-logo-black-01.png" alt="logo"
+                width="150px">
             <ul class="social-icons">
                 <li class="social-icon">
                     <a href="https://twitter.com/PremiumBeatsSA" target="_blank">
@@ -44,8 +45,9 @@
             </ul>
 
         </div>
-        <h4>Copyright &copy; <?php echo(date("Y")); ?>. All rights reserved.</h4>
+        <h4>Copyright &copy; Premium Beats <?php echo(date("Y")); ?>. All rights reserved.</h4>
     </footer>
-</div>
-</body>
-</html>
+    </div>
+    </body>
+
+    </html>
