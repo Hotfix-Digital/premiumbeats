@@ -6,6 +6,39 @@
  * 
  */
 
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $alerts = array();
+    $errors = array();
+    if($_POST['subscriber_name'] && $_POST['subscriber_email'] && $_POST['subscriber_contact']) {
+        $subscriber_name = $dbcon->real_escape_string($_POST['subscriber_name']);
+        $subscriber_email = $dbcon->real_escape_string($_POST['subscriber_email']);
+        $subscriber_contact = $dbcon->real_escape_string($_POST['subscriber_contact']);
+
+        if($subscribe = $dbcon->prepare("INSERT INTO subscriber (fullname, registered, email_address, phone_number) VALUES (?, CURRENT_TIMESTAMP(), ?, ?)")) {
+            $subscribe->bind_param("sss", $subscriber_name, $subscriber_email, $subscriber_contact);
+            $subscribe->execute();
+            if($ubscriber_id = $subscribe->insert_id) {
+                $alerts[] = "You have been successfully subscribed.";
+            } else {
+                trigger_error($dbcon->error);
+                $errors[] = "We could not subscribe you at this time. Please try again later.";
+            }
+        } else {
+            trigger_error($dbcon->error);
+            $errors[] = "There was an error subscribing you.";
+        }
+    } else {
+        if(!$_POST['subscriber_name']) $errors[] = "You did not provide your name.";
+        if(!$_POST['subscriber_email']) $errors[] = "Email address cannot be blank.";
+        if(!$_POST['subscriber_contact']) $errors[] = "Contact number missing.";
+    }
+
+    if($errors) $_SESSION['errors'] = $errors;
+    if($alerts) $_SESSION['alerts'] = $alerts;
+
+    header("Location: ./");
+    exit;
+}
 get_header();
 ?>
 <div id="content" class="content">
@@ -95,14 +128,42 @@ get_header();
         <div class="subscribe">
             <h1 class="subscribe__header">SUBSCRIBE</h1>
             <p class="subscribe__text">Signup with your email address to recieve the latest updates on Premium Beats</p>
-            <form action="#" class="subscribe__form">
+<?php if(isset($_SESSION['alerts'])): ?>
+            <!-- ALERT -->
+            <div class="alert">
+                <ul><strong>Success:</strong>
+<?php foreach($_SESSION['alerts'] as $alert): ?>
+                    <li><?php echo($alert); ?></li>
+<?php endforeach; ?>
+                </ul>
+            </div>
+<?php
+unset($_SESSION['alerts']);
+endif;
+if(isset($_SESSION['errors'])):
+?>
+
+            <!-- ERROR -->
+            <div class="error">
+                <ul><strong>Fixed the errors below:</strong>
+<?php foreach($_SESSION['errors'] as $error): ?>
+                    <li><?php echo($error); ?></li>
+<?php endforeach; ?>
+                </ul>
+            </div>
+<?php 
+unset($_SESSION['errors']);
+endif;
+?>
+
+            <form action="#" class="subscribe__form" method="POST">
                 <label for="name">Full Name</label>
-                <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="name"
+                <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="subscriber_name"
                     required>
                 <label for="name">Contact Number</label>
-                <input class="form__input form__input--fullname" type="number" placeholder="Contact Number" name="name">
+                <input class="form__input form__input--fullname" type="tel" placeholder="Contact Number" name="subscriber_contact">
                 <label for="email">Email Address</label>
-                <input class="form__input form__input--email" type="email" placeholder="Email address" name="email"
+                <input class="form__input form__input--email" type="email" placeholder="Email address" name="subscriber_email"
                     required>
                 <button class="form__button" type="submit">Sign up</button>
             </form>
