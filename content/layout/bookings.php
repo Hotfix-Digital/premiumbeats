@@ -1,10 +1,7 @@
 <?php
-/**
- * Get news posts available
- */
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = array();
+    $alerts = array();
     if($event_desc = $_POST['event_desc'] && $event_type = $_POST['event_type'] && $event_time = $_POST['event_time'] && $event_date = $_POST['event_date'] && $venue_name = $_POST['venue_name'] && $venue_address = $_POST['venue_address'] && $venue_capacity = $_POST['venue_capacity'] && $promoter_name = $_POST['promoter_name'] && $promoter_email = $_POST['promoter_email'] && $promoter_contact = $_POST['promoter_contact']) {
         $event_desc = $_POST['event_desc'];
         $event_type = $_POST['event_type'];
@@ -51,7 +48,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= 'From: <webmaster@premiumbeats.co.za>' . "\r\n";
         $headers .= 'Cc: luphondog@yahoo.com' . "\r\n";
 
-        mail($to,$subject,$message,$headers);
+        if(mail($to,$subject,$message,$headers)) {
+            $alerts[] = "Email sent successfully.";
+        }
     } else {
         if(!$_POST['event_desc']) $errors[] = "Event description is required.";
         if(!$_POST['event_type']) $errors[] = "Let us know what type of event this will be.";
@@ -63,21 +62,49 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(!$_POST['promoter_name']) $errors[] = "Let us know who you are.";
         if(!$_POST['promoter_email']) $errors[] = "We need to know where to responde to.";
         if(!$_POST['promoter_contact']) $errors[] = "We might want to give you a call.";
-
-        if($errors) {
-            foreach($errors as $error) {
-                echo("<p>$error</p>");
-            }
-            exit;
-        }
     }
+
+    if($alerts) $_SESSION['alerts'] = $alerts;
+    if($errors) $_SESSION['errors'] = $errors;
+
+    header("Location: bookings");
+    exit;
 }
 get_header();
 ?>
 <div id="content" class="content">
             <div class="container">
+<?php if(isset($_SESSION['alerts'])): ?>
+
+                <!-- ALERT -->
+                <div class="alert">
+                    <ul><strong>Success:</strong>
+<?php foreach($_SESSION['alerts'] as $alert): ?>
+                        <li><?php echo($alert); ?></li>
+<?php endforeach; ?>
+                    </ul>
+                </div>
+<?php
+unset($_SESSION['alerts']);
+endif;
+if(isset($_SESSION['errors'])):
+?>
+
+                <!-- ERROR -->
+                <div class="error">
+                    <ul><strong>Fixed the errors below:</strong>
+<?php foreach($_SESSION['errors'] as $error): ?>
+                        <li><?php echo($error); ?></li>
+<?php endforeach; ?>
+                    </ul>
+                </div>
+<?php 
+unset($_SESSION['errors']);
+endif;
+?>
+
                 <!-- BO0KING FORM -->
-                <form class="form" method="POST" onsubmit="submitBooking(event)">
+                <form class="form" method="POST">
                     <div class="banner">
                         <h2 class="profile__header">Premium Beats Booking Form</h2>
                     </div>
@@ -127,7 +154,7 @@ get_header();
                         <input type="submit" value="Submit Booking" class="form__button form__button--booking">
                     </div>
                 </form>
-                <script>
+                <!-- <script>
                 function submitBooking(event) {
                     event.preventDefault();
                     let errors = [];
@@ -159,7 +186,7 @@ get_header();
                         console.log(errors);
                     }
                 }
-                </script>
+                </script> -->
             </div>
         </div>
 </div>
