@@ -14,8 +14,7 @@ $routes = array(
   '/profile' => 'content/layout/profile.php',
   '/mixes' => 'content/layout/mixes.php',
   '/voice-overs' => 'content/layout/voice-overs.php',
-  '/bookings' => 'content/layout/bookings.php',
-  '/privacy' => 'content/layout/privacy.php'
+  '/bookings' => 'content/layout/bookings.php'
 );
 
 if(defined("SITE_HOME")) {

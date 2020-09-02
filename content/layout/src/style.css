@@ -276,7 +276,7 @@ nav {
 .large {
   font-weight: 700;
   font-size: 400px;
-  opacity: 0.2;
+  opacity: .2;
   mix-blend-mode: color-dodge;
 }
 
@@ -811,10 +811,6 @@ scale: ;
   background-image: url("../assets/mix-images/mix__PB018.png");
 }
 
-.mix__19 {
-  background-image: url("../assets/mix-images/mix__PB019.png");
-}
-
 .tracklisting::after {
   content: "\002B";
   font-size: 2rem;
@@ -1119,25 +1115,6 @@ form p {
   footer {
     height: 14rem;
   }
-}
-
-.privacy__policy {
-  font-size: 1.4rem;
-  line-height: 2.5;
-}
-
-.privacy__policy>ul {
-  list-style: initial !important;
-  margin-left: 3rem;
-}
-
-.privacy__policy>h1 {
-  font-size: 3rem;
-}
-
-.privacy__policy>h2 {
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -128,45 +128,43 @@ get_header();
         <div class="subscribe">
             <h1 class="subscribe__header">SUBSCRIBE</h1>
             <p class="subscribe__text">Signup with your email address to recieve the latest updates on Premium Beats</p>
-            <?php if(isset($_SESSION['alerts'])): ?>
+<?php if(isset($_SESSION['alerts'])): ?>
             <!-- ALERT -->
             <div class="alert">
                 <ul><strong>Success:</strong>
-                    <?php foreach($_SESSION['alerts'] as $alert): ?>
+<?php foreach($_SESSION['alerts'] as $alert): ?>
                     <li><?php echo($alert); ?></li>
-                    <?php endforeach; ?>
+<?php endforeach; ?>
                 </ul>
             </div>
-            <?php
+<?php
 unset($_SESSION['alerts']);
 endif;
-
 if(isset($_SESSION['errors'])):
 ?>
 
             <!-- ERROR -->
             <div class="error">
                 <ul><strong>Fixed the errors below:</strong>
-                    <?php foreach($_SESSION['errors'] as $error): ?>
+<?php foreach($_SESSION['errors'] as $error): ?>
                     <li><?php echo($error); ?></li>
-                    <?php endforeach; ?>
+<?php endforeach; ?>
                 </ul>
             </div>
-            <?php 
+<?php 
 unset($_SESSION['errors']);
 endif;
 ?>
 
             <form action="#" class="subscribe__form" method="POST">
                 <label for="name">Full Name</label>
-                <input class="form__input form__input--fullname" type="text" placeholder="Full Name"
-                    name="subscriber_name" required>
+                <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="subscriber_name"
+                    required>
                 <label for="name">Contact Number</label>
-                <input class="form__input form__input--fullname" type="tel" placeholder="Contact Number"
-                    name="subscriber_contact">
+                <input class="form__input form__input--fullname" type="tel" placeholder="Contact Number" name="subscriber_contact">
                 <label for="email">Email Address</label>
-                <input class="form__input form__input--email" type="email" placeholder="Email address"
-                    name="subscriber_email" required>
+                <input class="form__input form__input--email" type="email" placeholder="Email address" name="subscriber_email"
+                    required>
                 <button class="form__button" type="submit">Sign up</button>
             </form>
         </div>
