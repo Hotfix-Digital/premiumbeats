@@ -6,9 +6,55 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__19">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_5086299" width="100%" height="150"
+                src="https://app.hearthis.at/embed/5086299/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb019/" target="_blank">PB019 - Spring
+                        Edition</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
+                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
+                        target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 019</h2>
+                    <h2>Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>Ladon (feat. Bassekou Kouyate) - Manyelo Dafro</li>
+                        <li>Stimela (feat. Macco Dinerow) - Slay</li>
+                        <li>I Need Your Fire (Sebastien Dutch's Ushi Dub) - Natasha Chansa</li>
+                        <li>Aporia - Anerah Yasole</li>
+                        <li>Waloy (feat. Diama N'Diaye) [Chanell Collen Remix] - Hanna Haïs</li>
+                        <li>Hello Baby (Argento Dust Remix) [feat. Julia Church] - CINIMIN</li>
+                        <li>Africa Is Electronic - Afro Exotiq & Nitefreak</li>
+                        <li>Mntwana (feat. Lizwi) - Saint Evo</li>
+                        <li>Amasiko - Tekniq</li>
+                        <li>Genuine - Reign Carol</li>
+                        <li>Somewhere (feat. Jaidene Veda) [Original] - Kid Fonque & Jonny Miller</li>
+                        <li>Taba tsa hao (Limpopo Rhythm Remix) - Malumz On Decks ft KB Motsilanyane</li>
+                        <li>Ndiyeke - Lemon & Herb & Ami Faku</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__18">
         <div class="container mix__player">
-        <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150" src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay"><p>Listen to <a href="https://hearthis.at/premiumbeats/pb018-feat.-que-hiber/" target="_blank">PB018 Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank" >Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p></iframe>
+            <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150"
+                src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb018-feat.-que-hiber/" target="_blank">PB018
+                        Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
+                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
+                        target="_blank">hearthis.at</a></p>
+            </iframe>
         </div>
         <div class="tracklist__wrapper">
             <button class="tracklisting">
@@ -19,7 +65,8 @@ get_header();
                     <h2 class="mix__title">Premium Beats 018</h2>
                     <h2>1st Hour Mixed by Thebigzill Onair</h2>
                     <ol class="mix__hour">
-                        <li>Look What You're Doin' To Me (Motor City Drum Ensemble Remix) - Jazzanova  feat. Phonte, Jazzanova</li>
+                        <li>Look What You're Doin' To Me (Motor City Drum Ensemble Remix) - Jazzanova feat. Phonte,
+                            Jazzanova</li>
                         <li>Milk & Honey (feat. Fka Mash) - Punk Mbedzi</li>
                         <li>Find a Way - Citizen Deep & Azola</li>
                         <li>Enemies (Kususa Sophomore Dub) - DJ Sekza</li>
