@@ -27,13 +27,13 @@
                     </a>
                 </li>
                 <!-- <li class="social-icon">
-                    <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="far fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-soundcloud fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </li> -->
+            <a href="#">
+            <span class="fa-stack fa-2x">
+            <i class="far fa-circle fa-stack-2x"></i>
+            <i class="fab fa-soundcloud fa-stack-1x"></i>
+            </span>
+            </a>
+            </li> -->
                 <li class="social-icon">
                     <a href="#">
                         <span class="fa-stack fa-2x">
@@ -43,9 +43,9 @@
                     </a>
                 </li>
             </ul>
-
         </div>
-        <h4>Copyright &copy; Premium Beats <?php echo(date("Y")); ?>. All rights reserved.</h4>
+        <h4>Copyright &copy; Premium Beats <?php echo(date("Y")); ?>. All rights reserved. | <a
+                class="privacy-policy__link" href="privacy">Privacy Policy</a></h4>
     </footer>
     </div>
     </body>
