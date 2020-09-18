@@ -18,24 +18,32 @@ $routes = array(
   '/privacy' => 'content/layout/privacy.php'
 );
 
-if(defined("SITE_HOME")) {
-  $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-  $path = substr($url, strlen(SITE_HOME));
+$uri = isset($_GET['route']) ? $_GET['route'] : "/";
 
-  if($path == '/') {
-    require('content/layout/index.php');
-  } else {
-    $path = explode("/", $path);
-    foreach($routes as $route => $file) {
-      if(isset($path[1])) {
-        if($route == "/$path[1]") {
-          require($file);
-        }
-      } else {
-        require("content/layout/index.php");
-      }
-    }
+foreach($routes as $route => $template) {
+  if(preg_match("#^$route#", $uri)) {
+      include($template);
   }
-} else {
-  require('content/layout/404.php');
 }
+
+// if(defined("SITE_HOME")) {
+//   $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+//   $path = substr($url, strlen(SITE_HOME));
+
+//   if($path == '/') {
+//     require('content/layout/index.php');
+//   } else {
+//     $path = explode("/", $path);
+//     foreach($routes as $route => $file) {
+//       if(isset($path[1])) {
+//         if($route == "/$path[1]") {
+//           require($file);
+//         }
+//       } else {
+//         require("content/layout/index.php");
+//       }
+//     }
+//   }
+// } else {
+//   require('content/layout/404.php');
+// }
