@@ -6,6 +6,60 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__20">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_5137320" width="100%" height="150"
+                src="https://app.hearthis.at/embed/5137320/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb020-feat-afrotellus/" target="_blank">PB020
+                        Feat. Afrotellus</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
+                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
+                        target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 020</h2>
+                    <h2>1st Hour Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>The Space In Between - Jan Blomqvist</li>
+                        <li>W.T.F. (Tinlicker Extended Mix) - Moon Boots</li>
+                        <li>Lost in Mind (Volen Sentir Extended Vision) - Ben Böhmer & Malou</li>
+                        <li>Midnight (The Hanging Tree) [Themba's Herd Remix] [feat. Jalja] [Extended] - HOSH, 1979 &
+                            Themba</li>
+                        <li>2020 Souls - Aaaron</li>
+                        <li>Amagwala 2.0 - Kususa</li>
+                        <li>Surrender - Paso Doble</li>
+                        <li>Baleka (feat. Paulla Paloma) - Skavia</li>
+                        <li>Abiro (Muzari & Gratias Deo Remix) - Kato Change & Winyo</li>
+                        <li>Mudih (feat. Kekelingo) - DJ Clock</li>
+                        <li>Bella Ciao (Katika Remix) - La Casa de Papel / Money Heist</li>
+                        <li>The Sapiens - Caiiro</li>
+                    </ol>
+                    <h2>2nd Hour Mixed by Afrotellus</h2>
+                    <ol class="mix__hour">
+                        <li>China Charmeleon - Spoil My Night (Original Mix)</li>
+                        <li>Crackazat - Valentine (Original Mix)</li>
+                        <li>Captain Sky, Terry Hunter - Moon Child (The Re-Entry Terry Hunter Club Mix)</li>
+                        <li>Jimpster, Casamena - One (Original Mix)</li>
+                        <li>Caiiro - Thanda (feat Pixie L)</li>
+                        <li>TekniQ – Amasiko</li>
+                        <li>Shona SA & DJ Fresh (SA) - By The Water (feat. YoCa)</li>
+                        <li>MK Clive - Stay In</li>
+                        <li>Black Motion - Trap en los (feat. Nokwazi)</li>
+                        <li>Culoe De Song - City Of AquaDu</li>
+                        <li>TorQue MuziQ & Kamza Heavypoint - Bella Ciao (AfroTech Remix)</li>
+                        <li>Sun-EL Musician - Random (Original Mix)</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__19">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_5086299" width="100%" height="150"
