@@ -814,6 +814,9 @@ scale: ;
 .mix__19 {
   background-image: url("../assets/mix-images/mix__PB019.png");
 }
+.mix__20 {
+  background-image: url("../assets/mix-images/mix__PB020.png");
+}
 
 .tracklisting::after {
   content: "\002B";
