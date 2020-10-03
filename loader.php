@@ -7,15 +7,15 @@
 
 $routes = array(
   '/' => 'content/layout/index.php',
-  '/index' => 'content/layout/index.php',
-  '/profile' => 'content/layout/profile.php',
-  '/search' => 'content/layout/search.php',
-  '/gallery' => 'content/layout/gallery.php',
-  '/profile' => 'content/layout/profile.php',
-  '/mixes' => 'content/layout/mixes.php',
-  '/voice-overs' => 'content/layout/voice-overs.php',
-  '/bookings' => 'content/layout/bookings.php',
-  '/privacy' => 'content/layout/privacy.php'
+  'index' => 'content/layout/index.php',
+  'profile' => 'content/layout/profile.php',
+  'search' => 'content/layout/search.php',
+  'gallery' => 'content/layout/gallery.php',
+  'profile' => 'content/layout/profile.php',
+  'mixes' => 'content/layout/mixes.php',
+  'voice-overs' => 'content/layout/voice-overs.php',
+  'bookings' => 'content/layout/bookings.php',
+  'privacy' => 'content/layout/privacy.php'
 );
 
 $uri = isset($_GET['route']) ? $_GET['route'] : "/";
