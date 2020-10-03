@@ -6,6 +6,59 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__21">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_5176631" width="100%" height="150"
+                src="https://app.hearthis.at/embed/5176631/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb021-feat.-bozza-la/" target="_blank">PB021
+                        Feat. BOZZA LA</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
+                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
+                        target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 021</h2>
+                    <h2>1st Hour Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>Father Ocean (Ben Böhmer Remix) - Monolink</li>
+                        <li>Land of the Unknown (Atmospheric Mix) - Atmos Blaq</li>
+                        <li>Kata5 (feat. Kususa) - SGVO</li>
+                        <li>Take My Body - Morgana Ferrer</li>
+                        <li>Oyelo (Novakk Remix) - Sunlightsquare</li>
+                        <li>Ruby - Enamour</li>
+                        <li>Facts Matter - David Mayer</li>
+                        <li>In the Wild (feat. Meliha) [Extended Mix] - Dee Montero</li>
+                        <li>Back in the Morning (Club Vocal Version) - Elias - Julien Jabre</li>
+                        <li>The Wolf - Themba</li>
+                        <li>LoMhlaba (Chants Dub Mix) - Cee ElAssaad & Thandi Draai</li>
+                        <li>Ake cheat (Black Motion Rework) [feat. King Monada & Chymamusique] - Black Motion & Reign
+                            Carol</li>
+                    </ol>
+                    <h2>2nd Hour Mixed by BOZZA LA</h2>
+                    <ol class="mix__hour">
+                        <li>BEATSBYHAND - DRIP</li>
+                        <li>LATIQUE - 11TH HOUR</li>
+                        <li>MYAZISTO & SLOTTA COLLAB - #####</li>
+                        <li>THE FUNK HUNTERS,CMC AND SILENTA - TRIBUTE (CHINA CHARMELEON THE ANIMALREMIX)</li>
+                        <li>AMI FAKU - INTO NGAWE (EMDEEP 101 REMIX)</li>
+                        <li>TEBZA DE SOUL - DUB CHEMISTRY (DUB MIX)</li>
+                        <li>SIMBAD - TIME OFF</li>
+                        <li>8NINE MUZIQUE - SONDELA (6TH SPHERE BYO UNDERGROUND DUB)</li>
+                        <li>NUTTY NYS - POISE</li>
+                        <li>LAZARUSMAN - THE SIGNAL</li>
+                        <li>!SOOKS - W.S.G</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__20">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_5137320" width="100%" height="150"
