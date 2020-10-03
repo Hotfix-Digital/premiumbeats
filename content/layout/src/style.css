@@ -814,9 +814,12 @@ scale: ;
 .mix__19 {
   background-image: url("../assets/mix-images/mix__PB019.png");
 }
-/*New mix */
 .mix__20 {
   background-image: url("../assets/mix-images/mix__PB020.png");
+}
+/*New mix */
+.mix__21 {
+  background-image: url("../assets/mix-images/mix__PB021.png");
 }
 
 .tracklisting::after {
