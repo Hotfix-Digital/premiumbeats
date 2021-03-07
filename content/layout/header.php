@@ -57,9 +57,9 @@
                         <li class="nav-item">
                             <a href="gallery" class="nav-link">Gallery</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="voice-overs" class="nav-link">Voice Overs</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="bookings" class="nav-link">Bookings</a>
                         </li>
