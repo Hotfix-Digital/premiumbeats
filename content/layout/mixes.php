@@ -26,35 +26,34 @@ get_header();
                     <h2 class="mix__title">Premium Beats 022</h2>
                     <h2>1st Hour Mixed by Thebigzill Onair</h2>
                     <ol class="mix__hour">
-                        <li>Come Together (Extended Mix) - Nox Vahn & Marsh</li>
-                        <li>Afrika (feat. Nobuhle) - Lemon & Herb</li>
-                        <li>Hacker - &lez</li>
-                        <li>I'm Fallin' (feat. RY X) - Black Coffee</li>
-                        <li>Wenomkhubulwane (feat. Andile Mbili) - Leo Guardo</li>
-                        <li>Moya Wami (feat. Nuzu Deep) - Sir-Marcus</li>
-                        <li>Jamie (feat. Koki Riba) - Dee Cee</li>
-                        <li>It's True (feat. Koki Riba) - Dee Cee</li>
-                        <li>Free Like A Bird (John Bowtie Remix) SW V2 - Chuck Wonderland</li>
-                        <li>Your Voice (Enoo Napa Remix) - AWEN & Caiiro</li>
-                        <li>Technology (feat. Da Capo) - Black Motion</li>
-                        <li>The Owls - Yotto</li>
-                        <li>Ray - Avoure</li>
-                        <li>Loving You (feat. Lulu James) [Solee Remix] - Lane 8</li>
-                        <li>Digital Analog - Karyendasoul</li>
-                        <li>Out of Me - Luttrell</li>
+                        <li>(00:00) Come Together (Extended Mix) - Nox Vahn & Marsh</li>
+                        <li>(06:40) Afrika (feat. Nobuhle) - Lemon & Herb</li>
+                        <li>(10:25) Hacker - &lez</li>
+                        <li>(15:30) I'm Fallin' (feat. RY X) - Black Coffee</li>
+                        <li>(21:30) Wenomkhubulwane (feat. Andile Mbili) - Leo Guardo</li>
+                        <li>(27:15) Jamie (feat. Koki Riba) - Dee Cee</li>
+                        <li>(31:20) Moya Wami (feat. Nuzu Deep) - Sir-Marcus</li>
+                        <li>(35:12) It's True (feat. Koki Riba) - Dee Cee</li>
+                        <li>(39:15) Free Like A Bird (John Bowtie Remix) SW V2 - Chuck Wonderland</li>
+                        <li>(45:00) Your Voice (Enoo Napa Remix) - AWEN & Caiiro</li>
+                        <li>(50:50) Technology (feat. Da Capo) - Black Motion</li>
+                        <li>(57:20) The Owls - Yotto</li>
+                        <li>(1:03:00) Ray - Avoure</li>
+                        <li>(1:08:07) Loving You (feat. Lulu James) [Solee Remix] - Lane 8</li>
+                        <li>(1:13:30) Digital Analog - Karyendasoul</li>
                     </ol>
                     <h2>2nd Hour Mixed by Motion Dee</h2>
                     <ol class="mix__hour">
-                        <li>Sir LSG ft Carla Prather – Let it be</li>
-                        <li>The Layabouts ft Imaani – Stay</li>
-                        <li>Louis Benedetti ft Kenny Bobien – Be happy </li>
-                        <li>Commercial Street – amazing (Sean McCabe Dub)</li>
-                        <li>China Charmeleon – I want my soul (Tribute to George Floyd)</li>
-                        <li>Dj Rork – I wana see you come down</li>
-                        <li>June Jazzin – Are you house</li>
-                        <li>Kid Fonque – Undefined (Aquatone Dub</li>
-                        <li>China Charmeleon – Lookin into water</li>
-                        <li>Serge Funk – Can’t get enough</li>
+                        <li>(1:19:38) Sir LSG ft Carla Prather – Let it be</li>
+                        <li>(1:26:00) The Layabouts ft Imaani – Stay</li>
+                        <li>(1:31:27) Louis Benedetti ft Kenny Bobien – Be happy </li>
+                        <li>(1:38:27) Commercial Street – amazing (Sean McCabe Dub)</li>
+                        <li>(1:44:30) China Charmeleon – I want my soul (Tribute to George Floyd)</li>
+                        <li>(1:49:30)Dj Rork – I wana see you come down</li>
+                        <li>(1:56:10) June Jazzin – Are you house</li>
+                        <li>(2:02:50) Kid Fonque – Undefined (Aquatone Dub</li>
+                        <li>(2:10:48) China Charmeleon – Lookin into water</li>
+                        <li>(2:15:10) Serge Funk – Can’t get enough</li>
                     </ol>
                 </div>
             </div>
