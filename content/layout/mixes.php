@@ -40,7 +40,7 @@ get_header();
                         <li>Wake Me Up (Tale of Us Remix) - Cubicolor</li>
                         <li>Mermaid Tears (Moshito Mix) - Bee-Bar</li>
                     </ol>
-                    <h2>2nd Hour Mixed by BOZZA LA</h2>
+                    <h2>2nd Hour Mixed by Dj Sia</h2>
                     <ol class="mix__hour">
                         <li>Joeski - Babylon</li>
                         <li>&Me - After Dark</li>
