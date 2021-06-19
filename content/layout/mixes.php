@@ -6,6 +6,59 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__23">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_6009777" width="100%" height="150"
+                src="https://app.hearthis.at/embed/6009777/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
+                frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb023-feat.-dj-sia/" target="_blank">PB023 Feat.
+                        DJ Sia</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Bonginkosi
+                        Zulu</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 023</h2>
+                    <h2>1st Hour Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>This Life (feat. Lazarusman) - Tim Engelhardt & Lazarusman</li>
+                        <li>Yimithemba (feat. Mzulu Phaqa) - Lemon & Herb</li>
+                        <li>Toukan (feat. Ahmed Sosso) [Dixon Rework] - Manoo & Raoul K</li>
+                        <li>Soma (Extended Mix) - Return Of The Jaded</li>
+                        <li>Keep Going (Extended Mix) - HRRTZ & SHELLS</li>
+                        <li>Taiga (Extended Mix) - Return Of The Jaded</li>
+                        <li>Maelstrom (Extended Mix) - Ben Böhmer</li>
+                        <li>Fire Walk (Extended Mix) - Yotto</li>
+                        <li>Butterflies - Boris Brejcha</li>
+                        <li>Out of Me - Luttrell</li>
+                        <li>Stepping Out - Em Six</li>
+                        <li>Higher Love (feat. Paul Meany) [Spencer Brown Extended Mix] - Seven Lions & Jason Ross</li>
+                        <li>Wake Me Up (Tale of Us Remix) - Cubicolor</li>
+                        <li>Mermaid Tears (Moshito Mix) - Bee-Bar</li>
+                    </ol>
+                    <h2>2nd Hour Mixed by BOZZA LA</h2>
+                    <ol class="mix__hour">
+                        <li>Joeski - Babylon</li>
+                        <li>&Me - After Dark</li>
+                        <li>Dennis Cruz & Los Suruba- Uhuru</li>
+                        <li>Elfenberg - Tanzanite (Yubik Incantation)</li>
+                        <li>Da Afrika Deep - Peiro</li>
+                        <li>Stefano Ranieri - African Poet</li>
+                        <li>From96 - MbiraF</li>
+                        <li>Enoo Napa -Vortex (&Lez Interpretation)</li>
+                        <li>Jabzz Dimitri - Amadlozi (Leo Gardo Remix)</li>
+                        <li>Afro Brotherz - Baxolele (feat Tseke De Vince)L</li>
+                        <li>Atmos Blaq - Till We Meet Again</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__22">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_5699267" width="100%" height="150"
