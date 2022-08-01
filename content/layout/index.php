@@ -6,18 +6,18 @@
  * 
  */
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $alerts = array();
     $errors = array();
-    if($_POST['subscriber_name'] && $_POST['subscriber_email'] && $_POST['subscriber_contact']) {
+    if ($_POST['subscriber_name'] && $_POST['subscriber_email'] && $_POST['subscriber_contact']) {
         $subscriber_name = $dbcon->real_escape_string($_POST['subscriber_name']);
         $subscriber_email = $dbcon->real_escape_string($_POST['subscriber_email']);
         $subscriber_contact = $dbcon->real_escape_string($_POST['subscriber_contact']);
 
-        if($subscribe = $dbcon->prepare("INSERT INTO subscriber (fullname, registered, email_address, phone_number) VALUES (?, CURRENT_TIMESTAMP(), ?, ?)")) {
+        if ($subscribe = $dbcon->prepare("INSERT INTO subscriber (fullname, registered, email_address, phone_number) VALUES (?, CURRENT_TIMESTAMP(), ?, ?)")) {
             $subscribe->bind_param("sss", $subscriber_name, $subscriber_email, $subscriber_contact);
             $subscribe->execute();
-            if($ubscriber_id = $subscribe->insert_id) {
+            if ($ubscriber_id = $subscribe->insert_id) {
                 $alerts[] = "You have been successfully subscribed.";
             } else {
                 trigger_error($dbcon->error);
@@ -28,13 +28,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errors[] = "There was an error subscribing you.";
         }
     } else {
-        if(!$_POST['subscriber_name']) $errors[] = "You did not provide your name.";
-        if(!$_POST['subscriber_email']) $errors[] = "Email address cannot be blank.";
-        if(!$_POST['subscriber_contact']) $errors[] = "Contact number missing.";
+        if (!$_POST['subscriber_name']) $errors[] = "You did not provide your name.";
+        if (!$_POST['subscriber_email']) $errors[] = "Email address cannot be blank.";
+        if (!$_POST['subscriber_contact']) $errors[] = "Contact number missing.";
     }
 
-    if($errors) $_SESSION['errors'] = $errors;
-    if($alerts) $_SESSION['alerts'] = $alerts;
+    if ($errors) $_SESSION['errors'] = $errors;
+    if ($alerts) $_SESSION['alerts'] = $alerts;
 
     header("Location: ./");
     exit;
@@ -115,57 +115,50 @@ get_header();
     </div> <!-- end of .slide__show -->
     <div class="container">
         <div class="player">
-            <iframe scrolling="no" id="hearthis_at_track_6009777" width="100%" height="150"
-                src="https://app.hearthis.at/embed/6009777/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
-                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb023-feat.-dj-sia/" target="_blank">PB023 Feat.
-                        DJ Sia</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Bonginkosi
-                        Zulu</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            <iframe scrolling="no" id="hearthis_at_track_6946579" width="100%" height="150" src="https://app.hearthis.at/embed/6946579/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb024/" target="_blank">PB024</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <!--.player-->
         <div class="subscribe">
             <h1 class="subscribe__header">SUBSCRIBE</h1>
             <p class="subscribe__text">Signup with your email address to recieve the latest updates on Premium Beats</p>
-            <?php if(isset($_SESSION['alerts'])): ?>
-            <!-- ALERT -->
-            <div class="alert">
-                <ul><strong>Success:</strong>
-                    <?php foreach($_SESSION['alerts'] as $alert): ?>
-                    <li><?php echo($alert); ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
+            <?php if (isset($_SESSION['alerts'])) : ?>
+                <!-- ALERT -->
+                <div class="alert">
+                    <ul><strong>Success:</strong>
+                        <?php foreach ($_SESSION['alerts'] as $alert) : ?>
+                            <li><?php echo ($alert); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             <?php
-unset($_SESSION['alerts']);
-endif;
+                unset($_SESSION['alerts']);
+            endif;
 
-if(isset($_SESSION['errors'])):
-?>
+            if (isset($_SESSION['errors'])) :
+            ?>
 
-            <!-- ERROR -->
-            <div class="error">
-                <ul><strong>Fixed the errors below:</strong>
-                    <?php foreach($_SESSION['errors'] as $error): ?>
-                    <li><?php echo($error); ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-            <?php 
-unset($_SESSION['errors']);
-endif;
-?>
+                <!-- ERROR -->
+                <div class="error">
+                    <ul><strong>Fixed the errors below:</strong>
+                        <?php foreach ($_SESSION['errors'] as $error) : ?>
+                            <li><?php echo ($error); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            <?php
+                unset($_SESSION['errors']);
+            endif;
+            ?>
 
             <form action="#" class="subscribe__form" method="POST">
                 <label for="name">Full Name</label>
-                <input class="form__input form__input--fullname" type="text" placeholder="Full Name"
-                    name="subscriber_name" required>
+                <input class="form__input form__input--fullname" type="text" placeholder="Full Name" name="subscriber_name" required>
                 <label for="name">Contact Number</label>
-                <input class="form__input form__input--fullname" type="tel" placeholder="Contact Number"
-                    name="subscriber_contact">
+                <input class="form__input form__input--fullname" type="tel" placeholder="Contact Number" name="subscriber_contact">
                 <label for="email">Email Address</label>
-                <input class="form__input form__input--email" type="email" placeholder="Email address"
-                    name="subscriber_email" required>
+                <input class="form__input form__input--email" type="email" placeholder="Email address" name="subscriber_email" required>
                 <button class="form__button" type="submit">Sign up</button>
             </form>
         </div>
