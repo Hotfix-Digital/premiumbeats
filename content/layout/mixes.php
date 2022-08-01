@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Get news posts available
  */
@@ -6,14 +7,10 @@
 get_header();
 ?>
 <div id="content" class="content">
-    <div class="splash__container mix__23">
+    <div class="splash__container mix__24">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_6009777" width="100%" height="150"
-                src="https://app.hearthis.at/embed/6009777/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
-                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb023-feat.-dj-sia/" target="_blank">PB023 Feat.
-                        DJ Sia</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Bonginkosi
-                        Zulu</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            <iframe scrolling="no" id="hearthis_at_track_6946579" width="100%" height="150" src="https://app.hearthis.at/embed/6946579/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb024/" target="_blank">PB024</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -22,52 +19,33 @@ get_header();
             </button>
             <div class="tracklist__body">
                 <div class="tracklist__content">
-                    <h2 class="mix__title">Premium Beats 023</h2>
-                    <h2>1st Hour Mixed by Thebigzill Onair</h2>
+                    <h2 class="mix__title">Premium Beats 024 </h2>
+                    <h2>Mixed by Thebigzill Onair</h2>
                     <ol class="mix__hour">
-                        <li>This Life (feat. Lazarusman) - Tim Engelhardt & Lazarusman</li>
-                        <li>Yimithemba (feat. Mzulu Phaqa) - Lemon & Herb</li>
-                        <li>Toukan (feat. Ahmed Sosso) [Dixon Rework] - Manoo & Raoul K</li>
-                        <li>Soma (Extended Mix) - Return Of The Jaded</li>
-                        <li>Keep Going (Extended Mix) - HRRTZ & SHELLS</li>
-                        <li>Taiga (Extended Mix) - Return Of The Jaded</li>
-                        <li>Maelstrom (Extended Mix) - Ben Böhmer</li>
-                        <li>Fire Walk (Extended Mix) - Yotto</li>
-                        <li>Butterflies - Boris Brejcha</li>
-                        <li>Out of Me - Luttrell</li>
-                        <li>Stepping Out - Em Six</li>
-                        <li>Higher Love (feat. Paul Meany) [Spencer Brown Extended Mix] - Seven Lions & Jason Ross</li>
-                        <li>Wake Me Up (Tale of Us Remix) - Cubicolor</li>
-                        <li>Mermaid Tears (Moshito Mix) - Bee-Bar</li>
-                    </ol>
-                    <h2>2nd Hour Mixed by Dj Sia</h2>
-                    <ol class="mix__hour">
-                        <li>Joeski - Babylon</li>
-                        <li>&Me - After Dark</li>
-                        <li>Dennis Cruz & Los Suruba- Uhuru</li>
-                        <li>Elfenberg - Tanzanite (Yubik Incantation)</li>
-                        <li>Da Afrika Deep - Peiro</li>
-                        <li>Stefano Ranieri - African Poet</li>
-                        <li>From96 - MbiraF</li>
-                        <li>Enoo Napa -Vortex (&Lez Interpretation)</li>
-                        <li>Jabzz Dimitri - Amadlozi (Leo Gardo Remix)</li>
-                        <li>Afro Brotherz - Baxolele (feat Tseke De Vince)L</li>
-                        <li>Atmos Blaq - Till We Meet Again</li>
+                        <li>Strangers - Ben Böhmer</li>
+                        <li>Cloud (feat. Lyrik Sohlen) - Da Africa Deep</li>
+                        <li>Struggle & Pain - Marqathinie & DJ Weather</li>
+                        <li>Same - Mark Tarmonea, Yannek Maunz & Feli</li>
+                        <li>A Declaration of Love - Stephan Jolk</li>
+                        <li>Silence (feat. LENN V) - [Jerome Isma - Ae Extended Remix] - D'nox & Baya</li>
+                        <li>Personal Space - Yotto</li>
+                        <li>Sydney - Pauke Schaumburg & Jonas Gewald</li>
+                        <li>Melbourne Calling - Pauke Schaumburg & Jonas Gewald</li>
+                        <li>OShadows On The Wall (feat. Megan Morrison) [16BL Extended Mix) - 16BL & Wild Dark</li>
+                        <li>Weightless (Extended) - Ben Böhmer & Panama</li>
+                        <li>Callisto (Ben Böhmer Remix) - Stephan Bodzin & Marc Romboy</li>
                     </ol>
                 </div>
             </div>
             <!---.tracklist__body-->
         </div>
     </div>
+
     <div class="splash__container mix__22">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_5699267" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5699267/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_5699267" width="100%" height="150" src="https://app.hearthis.at/embed/5699267/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb022-feat.-motion-dee/" target="_blank">PB022
-                        Feat. Motion Dee</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. Motion Dee</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -115,13 +93,9 @@ get_header();
     </div>
     <div class="splash__container mix__21">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_5176631" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5176631/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_5176631" width="100%" height="150" src="https://app.hearthis.at/embed/5176631/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb021-feat.-bozza-la/" target="_blank">PB021
-                        Feat. BOZZA LA</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. BOZZA LA</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -168,13 +142,9 @@ get_header();
     </div>
     <div class="splash__container mix__20">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_5137320" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5137320/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_5137320" width="100%" height="150" src="https://app.hearthis.at/embed/5137320/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb020-feat-afrotellus/" target="_blank">PB020
-                        Feat. Afrotellus</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. Afrotellus</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -222,13 +192,9 @@ get_header();
     </div>
     <div class="splash__container mix__19">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_5086299" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5086299/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_5086299" width="100%" height="150" src="https://app.hearthis.at/embed/5086299/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb019/" target="_blank">PB019 - Spring
-                        Edition</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Edition</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -261,13 +227,9 @@ get_header();
     </div>
     <div class="splash__container mix__18">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150"
-                src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_5021249" width="100%" height="150" src="https://app.hearthis.at/embed/5021249/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb018-feat.-que-hiber/" target="_blank">PB018
-                        Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. Que Hiber</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -314,13 +276,9 @@ get_header();
     </div>
     <div class="splash__container mix__17">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_4713723" width="100%" height="150"
-                src="https://app.hearthis.at/embed/4713723/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_4713723" width="100%" height="150" src="https://app.hearthis.at/embed/4713723/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb017-feat-theocratous/" target="_blank">PB017
-                        Feat. Theocratous</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. Theocratous</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <div class="tracklist__wrapper">
@@ -366,13 +324,8 @@ get_header();
     </div>
     <div class="splash__container mix__16">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_4433241" width="100%" height="150"
-                src="https://app.hearthis.at/embed/4433241/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
-                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb016-feat.-anerah-yasole-2nd-edit/"
-                        target="_blank">PB016 FEAT. ANERAH YASOLE - 2nd Edit</a> <span>by</span><a
-                        href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a
-                        href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            <iframe scrolling="no" id="hearthis_at_track_4433241" width="100%" height="150" src="https://app.hearthis.at/embed/4433241/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeats/pb016-feat.-anerah-yasole-2nd-edit/" target="_blank">PB016 FEAT. ANERAH YASOLE - 2nd Edit</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <button class="tracklisting">
@@ -416,13 +369,9 @@ get_header();
     <!--- .splash__container -->
     <div class="splash__container mix__15">
         <div class="container mix__player">
-            <iframe scrolling="no" id="hearthis_at_track_4386310" width="100%" height="150"
-                src="https://app.hearthis.at/embed/4386310/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css="
-                frameborder="0" allowtransparency allow="autoplay">
+            <iframe scrolling="no" id="hearthis_at_track_4386310" width="100%" height="150" src="https://app.hearthis.at/embed/4386310/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
                 <p>Listen to <a href="https://hearthis.at/premiumbeats/pb015-feat.-dj-notrix/" target="_blank">PB015
-                        Feat. DJ NOTRIX</a> <span>by</span><a href="https://hearthis.at/premiumbeats/"
-                        target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/"
-                        target="_blank">hearthis.at</a></p>
+                        Feat. DJ NOTRIX</a> <span>by</span><a href="https://hearthis.at/premiumbeats/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
             </iframe>
         </div>
         <button class="tracklisting">
