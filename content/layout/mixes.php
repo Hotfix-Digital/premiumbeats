@@ -7,6 +7,40 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__25">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_8274862" width="100%" height="150" src="https://app.hearthis.at/embed/8274862/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeatssa/pb025-mixed-by-thebigzill-onair/" target="_blank">PB025 Mixed by Thebigzill Onair</a> <span>by</span><a href="https://hearthis.at/premiumbeatssa/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 025 </h2>
+                    <h2>Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>Drift (feat. Aparde) - Jan Blomqvist</li>
+                        <li>Impossible (feat. Alison Goldfrapp) [&ME Remix] - Röyksopp</li>
+                        <li>Ntala - Masšh</li>
+                        <li>Disarray (feat. Judge) - Tube & Berger</li>
+                        <li>Walk the Line (Themba Extended Mix) - Eli & Fur</li>
+                        <li>Pina Ya Bapostola (Afro Tech Mix) - TorQue MuziQ</li>
+                        <li>Amen - MÖRDA, Thakzin, Lyrik Shoxen</li>
+                        <li>Rise and Fall - Tankie-DJ & Atmos Blaq</li>
+                        <li>On My Knees (Adriatique Remix) - RÜFÜS DU SOL</li>
+                        <li>Terminator - Supreme Rhythm & InQfive</li>
+                        <li>Guerra - De Cave Man, TonicVolts & Bekzin Terris</li>
+                        <li>Dyspepsia (Atmospheric Mix) - Atmos Blaq</li>
+                        <li>Let's Go - Dee Traits</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__24">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_6946579" width="100%" height="150" src="https://app.hearthis.at/embed/6946579/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
