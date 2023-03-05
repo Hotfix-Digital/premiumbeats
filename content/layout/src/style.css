@@ -868,6 +868,10 @@ scale: ;
   background-image: url("../assets/mix-images/mix__PB024.png");
 }
 
+.mix__25 {
+  background-image: url("../assets/mix-images/mix__PB024.png");
+}
+
 .tracklisting::after {
   content: "\002B";
   font-size: 2rem;
