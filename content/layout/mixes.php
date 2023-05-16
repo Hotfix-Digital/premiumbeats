@@ -7,6 +7,40 @@
 get_header();
 ?>
 <div id="content" class="content">
+    <div class="splash__container mix__26">
+        <div class="container mix__player">
+            <iframe scrolling="no" id="hearthis_at_track_9009952" width="100%" height="150" src="https://app.hearthis.at/embed/9009952/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
+                <p>Listen to <a href="https://hearthis.at/premiumbeatssa/pb026-mixed-by-thebigzill-onair/" target="_blank">PB026 Mixed by Thebigzill Onair</a> <span>by</span><a href="https://hearthis.at/premiumbeatssa/" target="_blank">Thebigzill Onair</a> <span>on</span> <a href="https://hearthis.at/" target="_blank">hearthis.at</a></p>
+            </iframe>
+        </div>
+        <div class="tracklist__wrapper">
+            <button class="tracklisting">
+                Tracklist
+            </button>
+            <div class="tracklist__body">
+                <div class="tracklist__content">
+                    <h2 class="mix__title">Premium Beats 026 </h2>
+                    <h2>Mixed by Thebigzill Onair</h2>
+                    <ol class="mix__hour">
+                        <li>Lutar (feat. Kali Mija & Offkey) [Chronical Deep Clap Back] - Hypaphonik</li>
+                        <li>Two Zulu Men in Ibiza - DJ Merlon & Enoo Napa</li>
+                        <li>Luxury (Enoo Napa Remix) - Luka, Jaidene Veda & Enoo Napa</li>
+                        <li>iFu (feat. Karyendasoul) - Maline Aura</li>
+                        <li>iLanga - Masšh</li>
+                        <li>Nice to Meet You (Extended Mix) - Andhim</li>
+                        <li>Drift (feat. Aparde) - Jan Blomqvist</li>
+                        <li>Thula (feat. Khonaye) - Blanka Mazimela</li>
+                        <li>Let's Pretend (Saint Evo Remix) - Helsloot</li>
+                        <li>I Don't Wanna Feel This (feat. Odarka) - DysFonik & Da Real Emkay</li>
+                        <li>Horizon Red - Made By Pete & Zoe Kypri</li>
+                        <li>Program & Control Man - 104 BPM & Marco Pex</li>
+                        <li>Mano Mano (Drumetic Boyz Remix) - Thee Suka</li>
+                    </ol>
+                </div>
+            </div>
+            <!---.tracklist__body-->
+        </div>
+    </div>
     <div class="splash__container mix__25">
         <div class="container mix__player">
             <iframe scrolling="no" id="hearthis_at_track_8274862" width="100%" height="150" src="https://app.hearthis.at/embed/8274862/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=1&autoplay=0&css=" frameborder="0" allowtransparency allow="autoplay">
